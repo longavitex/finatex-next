@@ -1,0 +1,104 @@
+#footer {
+    @media (max-width: 1023.99px) {
+        .cta-block {
+            height: 140px;
+
+            .container {
+                flex-direction: column;
+                justify-content: center;
+                gap: 12px;
+            }
+        }
+
+        .footer-block {
+            .row {
+                .col-3:first-child {
+                    max-width: 35%;
+                    flex: 0 0 35%;
+                }
+
+                .col-6 {
+                    max-width: 55%;
+                    flex: 0 0 55%;
+
+                    .footer-navigate {
+                        gap: 0;
+                        justify-content: space-between;
+                    }
+                }
+
+                .col-3:last-child {
+                    margin-top: 30px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.99px) {
+        .cta-block {
+            height: 180px;
+
+            .container {
+                text-align: center;
+            }
+        }
+
+        .footer-block {
+            .row {
+                .col-3:first-child {
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                }
+
+                .col-6 {
+                    margin-top: 30px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                .col-3:last-child {
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                }
+            }
+
+            .footer-bottom {
+                flex-direction: column-reverse;
+                gap: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 575.99px) {
+        .footer-block {
+            .row {
+                .col-3:first-child {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                .col-6 {
+                    margin-top: 30px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+
+                    .footer-navigate {
+                        flex-wrap: wrap;
+                        gap: 30px;
+                    }
+
+                    .footer-nav-item {
+                        width: 100%;
+                    }
+                }
+
+                .col-3:last-child {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

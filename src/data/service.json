@@ -1,0 +1,38 @@
+[
+    {
+        "icon": "icon-coin-chair",
+        "title": "Cryptocurrency Trading",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": ""
+    },
+    {
+        "icon": "icon-hand-tick",
+        "title": "Portfolio Management",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": ""
+    },
+    {
+        "icon": "icon-hand-house",
+        "title": "Investment Advice",
+        "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
+        "shortDesc": ""
+    },
+    {
+        "icon": "icon-gear-warning",
+        "title": "Risk Management",
+        "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
+        "shortDesc": ""
+    },
+    {
+        "icon": "icon-text-search",
+        "title": "Research and Analysis",
+        "desc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions.",
+        "shortDesc": ""
+    },
+    {
+        "icon": "icon-education text",
+        "title": "Education and Resources",
+        "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
+        "shortDesc": ""
+    }
+]
