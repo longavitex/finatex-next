@@ -75,15 +75,16 @@ const Footer = () => {
                                         <div className="fw-700 text-white mt-1">001-1234-88888</div>
                                     </div>
                                 </div>
-                                <div className="locate mt-3 flex items-center"> <i className="ph-light ph-map-pin text-surface"></i>
+                                <div className="locate mt-3 flex items-center">
+                                    <Icon.MapPin weight="light" className="text-surface" />
                                     <div className="caption1 text-surface ml-2">101 E 129th St, East Chicago, IN 46312, US</div>
                                 </div>
-                                <div className="send-block mt-20 flex items-center">
-                                    <input className="caption1 text-secondary" type="text" placeholder="Your email address" />
-                                    <button className="flex items-center justify-center">
+                                <form className="send-block mt-5 flex items-center h-[46px] rounded-lg overflow-hidden">
+                                    <input className="caption1 text-secondary h-full w-full pr-4 pl-3" type="text" placeholder="Your email address" required />
+                                    <button className="flex items-center justify-center w-[46px] h-[46px] bg-blue flex-shrink-0">
                                         <Icon.PaperPlaneTilt className="text-white" />
                                     </button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -126,13 +126,13 @@ const AboutTwo = () => {
             </div>
             <div className="button-block flex items-center gap-5 mt-10 pb-2">
               <a
-                className="button-main text-white bg-blue hover-button-black text-button py-3 px-9 rounded-full"
+                className="button-main text-white bg-blue hover-button-black text-button rounded-full"
                 href="contact-two.html"
               >
                 Get started
               </a>
               <a
-                className="button-main text-on-surface hover-button-black bg-white text-button py-3 px-9 rounded-full border-2 border-blue flex items-center gap-2"
+                className="button-main text-on-surface hover:bg-black hover:text-white hover:border-transparent bg-white text-button rounded-full border-2 border-blue flex items-center gap-2"
                 href="contact-two.html"
               >
                 <i className="ph ph-phone text-xl"></i>

@@ -13,7 +13,7 @@ const ServiceOne: React.FC<Props> = ({ data }) => {
                 <div className="container">
                     <div className="heading3 text-center">Our Services</div>
                     <div className="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-8 mt-10 gap-y-10">
-                        {data.slice(0, 8).map((item, index) => (
+                        {data.slice(0, 6).map((item, index) => (
                             <ServiceItem data={item} style='style-one' number={index} key={index} />
                         ))}
                     </div>

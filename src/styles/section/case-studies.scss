@@ -1,0 +1,76 @@
+.case-study-item.style-two {
+    .item-main {
+        position: relative;
+        cursor: pointer;
+
+        .bg-img {
+            position: relative;
+
+            img {
+                transition: all linear 0.5s;
+                cursor: pointer;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #121212;
+                opacity: 0;
+                transition: all ease 0.3s;
+                z-index: 0;
+            }
+
+            a {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                transform: translateX(200px);
+                z-index: 1;
+                transition: all ease 0.5s;
+
+                &:hover {
+                    background-color: var(--blue);
+
+                    div,
+                    svg {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+        .infor {
+            .heading6 {
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            .bg-img {
+                img {
+                    transform: scale(1.06);
+                }
+
+                &::after {
+                    opacity: 0.4;
+                }
+
+                a {
+                    transform: translateX(0);
+                }
+            }
+
+            .infor {
+                .heading6 {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

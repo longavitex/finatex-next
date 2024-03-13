@@ -7,7 +7,7 @@ interface Props {
     data: Array<ServiceType>
 }
 
-const ServiceAbout: React.FC<Props> = ({ data }) => {
+const ServiceAboutOne: React.FC<Props> = ({ data }) => {
     return (
         <>
             <div className="service-block bg-surface py-[100px]">
@@ -24,4 +24,4 @@ const ServiceAbout: React.FC<Props> = ({ data }) => {
     )
 }
 
-export default ServiceAbout
+export default ServiceAboutOne

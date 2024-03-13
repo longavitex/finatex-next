@@ -24,6 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[class^="icon-"].text-black:before,
+[class*=" icon-"].text-black:before {
+  color: var(--black);
+}
+
 .icon-call-red .path1:before {
   content: "\e900";
   color: rgb(255, 255, 255);

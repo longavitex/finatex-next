@@ -74,6 +74,10 @@ textarea:focus {
     border-color: var(--blue);
 }
 
+button {
+    outline: none;
+}
+
 .checkbox-input {
     width: 16px;
     height: 16px;
@@ -130,6 +134,10 @@ textarea:focus {
     &:hover {
         box-shadow: 1px 5px 20px 0px rgba(37, 82, 91, 0.2);
     }
+}
+
+.bg-gradient-blue {
+    background: (linear-gradient(136deg, #5473DC 0%, #8BF7FF 100%));
 }
 
 .heading1 {

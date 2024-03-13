@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Which device can I use to enter your service?",
+        "desc": "You can access our service from any device with an internet connection."
+    },
+    {
+        "id": 2,
+        "title": "What are your products and services?",
+        "desc": "Our products and services include [describe your products/services briefly]."
+    },
+    {
+        "id": 3,
+        "title": "How can I contact your customer support department?",
+        "desc": "You can contact our customer support department by [provide contact information such as phone number or email] during our business hours. Our team is ready to assist you with any inquiries or concerns."
+    },
+    {
+        "id": 4,
+        "title": "Can I return items if I'm not satisfied?",
+        "desc": "Yes, you can return items within [specify time frame] if you are not satisfied. Please review our return policy for further instructions."
+    },
+    {
+        "id": 5,
+        "title": "What is your warranty policy?",
+        "desc": "We offer a [specify duration] warranty on our products. Please see our warranty policy for specific details and coverage."
+    },
+    {
+        "id": 6,
+        "title": "What are your shipping and delivery policies?",
+        "desc": "Our shipping and delivery policies vary depending on the location and shipping method chosen. Please refer to our shipping page for detailed information."
+    },
+    {
+        "id": 7,
+        "title": "What payment methods do you accept?",
+        "desc": "We accept various payment methods, including [list accepted payment methods]. You can choose the most convenient option during the checkout process."
+    },
+    {
+        "id": 8,
+        "title": "Do you have a customer loyalty program?",
+        "desc": "Yes, we have a customer loyalty program. Earn points with each purchase and enjoy exclusive benefits. Join now to start earning rewards!"
+    }
+]

@@ -9,7 +9,7 @@ import * as Icon from "@phosphor-icons/react/dist/ssr";
 const MenuOne = () => {
     const pathname = usePathname()
     const [fixedHeader, setFixedHeader] = useState(false)
-    const [lastScrollPosition, setLastScrollPosition] = useState(0);
+    // const [lastScrollPosition, setLastScrollPosition] = useState(0);
     const [openMenuMobile, setOpenMenuMobile] = useState(false)
     const [openSubNavMobile, setOpenSubNavMobile] = useState<number | null>(null)
 
@@ -20,8 +20,8 @@ const MenuOne = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            setFixedHeader(scrollPosition > 0 && scrollPosition < lastScrollPosition);
-            setLastScrollPosition(scrollPosition);
+            setFixedHeader(scrollPosition > 400);
+            // setLastScrollPosition(scrollPosition);
         };
 
         // Gắn sự kiện cuộn khi component được mount
@@ -31,7 +31,7 @@ const MenuOne = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrollPosition]);
+    }, []);
 
     return (
         <>
@@ -71,7 +71,7 @@ const MenuOne = () => {
                                     <li className={`sub-nav-item ${pathname === '/about/about-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/about/about-two">About Style 2</Link></li>
                                 </ul>
                             </li>
-                            <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/services/') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
+                            <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/service') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
                                 <span>Services</span>
                                 <span><Icon.CaretDown className="text-sm" /></span>
                             </Link>
@@ -88,7 +88,6 @@ const MenuOne = () => {
                                 <ul className="sub-nav">
                                     <li className={`sub-nav-item ${pathname === '/case-studies/case-studies-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/case-studies-one">Case Studies 1</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/case-studies/case-studies-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/case-studies-two">Case Studies 2</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/case-studies/case-studies-detail' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/case-studies-detail">Case Studies Detail</Link></li>
                                 </ul>
                             </li>
                             <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/pages/') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
@@ -106,8 +105,8 @@ const MenuOne = () => {
                                 <span><Icon.CaretDown className="text-sm" /></span>
                             </Link>
                                 <ul className="sub-nav">
-                                    <li className={`sub-nav-item ${pathname === '/blog/blog-list' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-one">Blog List 1</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/blog/blog-list' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-two">Blog List 2</Link></li>
+                                    <li className={`sub-nav-item ${pathname === '/blog/blog-list-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-one">Blog List 1</Link></li>
+                                    <li className={`sub-nav-item ${pathname === '/blog/blog-list-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-two">Blog List 2</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-grid' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-grid">Blog Grid</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-masonry' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-masonry">Blog Masonry</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-detail-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-detail-one">Blog Detail 1</Link></li>

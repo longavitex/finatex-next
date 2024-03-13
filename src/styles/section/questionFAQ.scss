@@ -1,0 +1,31 @@
+.question-item {
+    .question-item-main {
+        svg {
+            transform: rotate(0);
+            transition: all ease 0.5s;
+        }
+
+        @media (max-width: 575.99px) {
+            svg {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    .content-question {
+        transition: all ease-in-out 0.5s;
+        max-height: 0;
+        overflow: hidden;
+
+        .border-line {
+            background-color: rgba(231, 231, 231, 0.8);
+        }
+    }
+}
+
+.question-item.open {
+    .content-question {
+        max-height: 150px;
+    }
+}
