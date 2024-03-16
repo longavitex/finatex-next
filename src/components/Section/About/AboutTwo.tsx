@@ -13,7 +13,7 @@ const AboutTwo = () => {
   }
 
   return (
-    <div className="about-block py-[100px] bg-white">
+    <div className="about-block lg:py-[100px] sm:py-16 py-10 bg-white">
       <div className="container">
         <div className="row flex items-center">
           <div className="w-full xl:w-1/2">
@@ -124,7 +124,7 @@ const AboutTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="button-block flex items-center gap-5 mt-10 pb-2">
+            <div className="button-block flex items-center gap-5 md:mt-10 mt-6 pb-2">
               <a
                 className="button-main text-white bg-blue hover-button-black text-button rounded-full"
                 href="contact-two.html"

@@ -1,6 +1,49 @@
 #header {
     padding-bottom: 80px;
 
+    .list-social {
+        .item {
+            transition: all ease 0.3s;
+
+            i {
+                &::before {
+                    transition: all ease 0.3s;
+                    color: var(--black);
+                }
+            }
+
+            &:hover {
+                background-color: var(--black);
+
+                i {
+                    &::before {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+        &.style-three {
+            .item {
+                i {
+                    &::before {
+                        color: var(--white);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--white);
+
+                    i {
+                        &::before {
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 1023.99px) {
         padding-bottom: 70px;
     }

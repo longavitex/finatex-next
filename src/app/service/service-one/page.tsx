@@ -3,7 +3,7 @@ import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import ServiceFive from "@/components/Section/Service/ServiceFive"
 import serviceData from '@/data/service.json'
-import Partner from "@/components/Section/Partner/Partner"
+import Partner from "@/components/Section/Partner/PartnerAbout"
 import CTA from "@/components/Section/CTA/CTA"
 import Footer from "@/components/Footer/Footer"
 
@@ -11,11 +11,11 @@ export default function ServiceStyleOne() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="header">
+                <header id="header">
                     <TopNavOne />
                     <MenuOne />
-                </div>
-                <div className="content">
+                </header>
+                <main className="content">
                     <BreadcrumbItem link="Our Services" img="/images/banner/about1.png" title="Our Services" desc="Expand your knowledge and skills in cryptocurrency trading through our educational resources." />
                     <div className="mt-[100px]">
                         <div className="container">
@@ -38,11 +38,11 @@ export default function ServiceStyleOne() {
                     <ServiceFive data={serviceData} title="" />
                     <Partner />
                     <CTA />
-                </div>
-                <div id="footer">
+                </main>
+                <footer id="footer">
                     <Footer />
-                </div>
-            </div>
+                </footer>
+            </div >
         </>
     )
 }

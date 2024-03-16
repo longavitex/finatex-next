@@ -18,13 +18,13 @@ export default function Pricing() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="header">
+                <header id="header">
                     <TopNavOne />
                     <MenuOne />
-                </div>
-                <div className="content">
+                </header>
+                <main className="content">
                     <BreadcrumbItem link="Contact us" img="/images/banner/case-studies.png" title="Contact us" desc="Discover transparent pricing options tailored to your budget on our Pricing page." />
-                    <div className="list-partner-block py-[100px]">
+                    <div className="list-partner-block lg:py-[100px] sm:py-16 py-10">
                         <div className="container">
                             <div className="heading3 text-center">We are helping over 30k+ <br />customers for growing business</div>
                             <div className="list-partner mt-6">
@@ -51,7 +51,7 @@ export default function Pricing() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="more-list flex flex-col gap-y-8 mt-[100px]">
+                            <div className="more-list flex flex-col gap-y-8 lg:mt-[100px] sm:mt-16 mt-10">
                                 <div className="list grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
                                     <div className="w-full">
                                         <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/1.svg" alt="1" /></div>
@@ -85,11 +85,11 @@ export default function Pricing() {
                         </div>
                     </div>
                     <CTA />
-                </div>
-                <div id="footer">
+                </main>
+                <footer id="footer">
                     <Footer />
-                </div>
-            </div>
+                </footer>
+            </div >
         </>
     )
 }

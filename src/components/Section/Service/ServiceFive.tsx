@@ -10,7 +10,7 @@ interface Props {
 const ServiceFive: React.FC<Props> = ({ title, data }) => {
     return (
         <>
-            <div className="service-block pt-[100px]">
+            <div className="service-block pt-[100px] sm:pt-16 pt-10">
                 <div className="container flex flex-col items-center">
                     {title && (
                         <div className="heading3 lg:w-7/12 text-center pb-10">{title}</div>

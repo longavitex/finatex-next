@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import ServiceItem from '../../Service/ServiceItem'
 import { ServiceType } from '@/type/ServiceType'
 import { motion } from 'framer-motion'
@@ -18,7 +18,7 @@ const ServiceFilter: React.FC<Props> = ({ data }) => {
 
     return (
         <>
-            <div className="service-block py-[100px]">
+            <div className="service-block lg:py-[100px] sm:py-16 py-10">
                 <div className="container flex flex-col items-center">
                     <div className="heading flex flex-col items-center text-center">
                         <div className="menu-tab flex items-center gap-2 p-1 bg-surface rounded-2xl">
@@ -38,7 +38,7 @@ const ServiceFilter: React.FC<Props> = ({ data }) => {
                             ))}
                         </div>
                     </div>
-                    <div className="list-service grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-8 gap-y-10 mt-10">
+                    <div className="list-service grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-8 gap-y-10 md:mt-10 mt-6">
                         {data.filter(item => item.category === activeTab).slice(0, 8).map((item, index) => (
                             <ServiceItem data={item} style='style-four' number={index} key={index} />
                         ))}

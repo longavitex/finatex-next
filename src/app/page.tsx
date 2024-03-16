@@ -3,21 +3,38 @@ import MenuOne from "@/components/Header/Menu/MenuOne";
 import SliderOne from "@/components/Slider/SliderOne";
 import ServiceOne from "@/components/Section/Service/ServiceOne";
 import serviceData from '@/data/service.json'
-import PaymentGateway from "@/components/Home1/PaymentGateway";
+import PaymentGatewayOneFirst from "@/components/Section/PaymentGateway/PaymentGatewayOneFirst";
+import CaseStudyOne from "@/components/Section/CaseStudy/CaseStudyOne";
+import PaymentGatewayOneSecond from "@/components/Section/PaymentGateway/PaymentGatewayOneSecond";
+import FaqsOne from "@/components/Section/FAQs/FaqsOne";
+import FormRequestOne from "@/components/Section/FormRequest/FormRequestOne";
+import blogData from '@/data/blog.json'
+import BlogOne from "@/components/Section/Blog/BlogOne";
+import Footer from "@/components/Footer/Footer";
+import PartnerOne from "@/components/Section/Partner/PartnerOne";
 
 export default function Home() {
   return (
     <>
-      <div className="">
-        <div id="header">
+      <div className="overflow-x-hidden">
+        <header id="header">
           <TopNavOne />
           <MenuOne />
-        </div>
-        <div className="content overflow-x-hidden pb-36">
+        </header>
+        <main className="content">
           <SliderOne />
           <ServiceOne data={serviceData} />
-          <PaymentGateway />
-        </div>
+          <PaymentGatewayOneFirst />
+          <CaseStudyOne />
+          <PaymentGatewayOneSecond />
+          <FaqsOne />
+          <FormRequestOne />
+          <BlogOne data={blogData} />
+          <PartnerOne />
+        </main>
+        <footer id="footer">
+          <Footer />
+        </footer>
       </div>
     </>
   );

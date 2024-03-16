@@ -10,10 +10,10 @@ interface Props {
 const ServiceAboutOne: React.FC<Props> = ({ data }) => {
     return (
         <>
-            <div className="service-block bg-surface py-[100px]">
+            <div className="service-block bg-surface lg:py-[100px] sm:py-16 py-10">
                 <div className="container">
                     <TextHeadingItem style='' title='Our Services' desc='Customized financial services designed to meet your unique needs and drive your financial success' />
-                    <div className="list-service grid xl:grid-cols-4 sm:grid-cols-2 gap-8 mt-10 gap-y-10">
+                    <div className="list-service grid xl:grid-cols-4 sm:grid-cols-2 gap-8 md:mt-10 mt-6 gap-y-10">
                         {data.slice(0, 4).map((item, index) => (
                             <ServiceItem data={item} style='style-about' number={index} key={index} />
                         ))}

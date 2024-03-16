@@ -11,22 +11,22 @@ import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 export default function Faqs() {
-    const [faq, setFaq] = useState(1)
+    const [faq, setFaq] = useState<number | null>(1)
 
     const handleFaq = (id: number) => {
-        setFaq(id)
+        setFaq(prevId => prevId === id ? null : id)
     }
 
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="header">
+                <header id="header">
                     <TopNavOne />
                     <MenuOne />
-                </div>
-                <div className="content">
+                </header>
+                <main className="content">
                     <BreadcrumbItem link="FAQs" img="/images/banner/case-studies.png" title="FAQs" desc="Explore our frequently asked questions and our answers to them." />
-                    <div className="faq-block py-[100px]">
+                    <div className="faq-block lg:py-[100px] sm:py-16 py-10">
                         <div className="container flex items-center justify-center">
                             <div className="w-full lg:w-2/3">
                                 <div className="heading6">Payments</div>
@@ -46,12 +46,12 @@ export default function Faqs() {
                                             </div>
                                             <div className="content-question">
                                                 <div className="border-line w-full"></div>
-                                                <div className="body3 text-secondary py-4">{item.desc}</div>
+                                                <div className="body3 text-secondary pb-4">{item.desc}</div>
                                             </div>
                                         </div>
                                     ))}
                                 </div>
-                                <div className="heading6 mt-10">Suggestion</div>
+                                <div className="heading6 md:mt-10 mt-6">Suggestion</div>
                                 <div className="list-question">
                                     {faqData.slice(4, 8).map(item => (
                                         <div
@@ -68,7 +68,7 @@ export default function Faqs() {
                                             </div>
                                             <div className="content-question">
                                                 <div className="border-line w-full"></div>
-                                                <div className="body3 text-secondary py-4">{item.desc}</div>
+                                                <div className="body3 text-secondary pb-4">{item.desc}</div>
                                             </div>
                                         </div>
                                     ))}
@@ -93,11 +93,11 @@ export default function Faqs() {
                         </div>
                     </div>
                     <CTA />
-                </div>
-                <div id="footer">
+                </main>
+                <footer id="footer">
                     <Footer />
-                </div>
-            </div>
+                </footer>
+            </div >
         </>
     )
 }

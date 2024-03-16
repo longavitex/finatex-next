@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "tag": "featured",
+        "category": "financial planning",
+        "img": "/images/blog/item1.png",
+        "title": "How does writing influence your personal brand",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar3.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item2.png",
+            "/images/blog/item3.png"
+        ]
+    },
+    {
+        "id": 2,
+        "tag": "experience",
+        "category": "payment solution",
+        "img": "/images/blog/item2.png",
+        "title": "How to write content about your photographs",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar4.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item4.png",
+            "/images/blog/item5.png"
+        ]
+    },
+    {
+        "id": 3,
+        "tag": "interview",
+        "category": "cryptocurrency financial",
+        "img": "/images/blog/item3.png",
+        "title": "Where to grow your business as a photographer",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar5.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item2.png",
+            "/images/blog/item1.png"
+        ]
+    },
+    {
+        "id": 4,
+        "tag": "skill",
+        "category": "blockchain",
+        "img": "/images/blog/item4.png",
+        "title": "10 Common Mistakes to Avoid in Financial Planning",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar3.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item3.png",
+            "/images/blog/item6.png"
+        ]
+    },
+    {
+        "id": 5,
+        "tag": "business",
+        "category": "online banking",
+        "img": "/images/blog/item5.png",
+        "title": "Travelling as a way of self-discovery and progress",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar4.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item8.png",
+            "/images/blog/item2.png"
+        ]
+    },
+    {
+        "id": 6,
+        "tag": "design",
+        "category": "personal financial",
+        "img": "/images/blog/item6.png",
+        "title": "5 Steps for Creating a Personal Finance Plan",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar5.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item5.png",
+            "/images/blog/item3.png"
+        ]
+    },
+    {
+        "id": 7,
+        "tag": "featured",
+        "category": "financial planning",
+        "img": "/images/blog/item7.png",
+        "title": "How does writing influence your personal brand",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar3.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item4.png",
+            "/images/blog/item9.png"
+        ]
+    },
+    {
+        "id": 8,
+        "tag": "experience",
+        "category": "payment solution",
+        "img": "/images/blog/item8.png",
+        "title": "How to write content about your photographs",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar4.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item6.png",
+            "/images/blog/item5.png"
+        ]
+    },
+    {
+        "id": 9,
+        "tag": "interview",
+        "category": "cryptocurrency financial",
+        "img": "/images/blog/item9.png",
+        "title": "Where to grow your business as a photographer",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar5.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item3.png",
+            "/images/blog/item10.png"
+        ]
+    },
+    {
+        "id": 10,
+        "tag": "skill",
+        "category": "blockchain",
+        "img": "/images/blog/item10.png",
+        "title": "10 Common Mistakes to Avoid in Financial Planning",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar3.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item11.png",
+            "/images/blog/item12.png"
+        ]
+    },
+    {
+        "id": 11,
+        "tag": "business",
+        "category": "online banking",
+        "img": "/images/blog/item11.png",
+        "title": "Travelling as a way of self-discovery and progress",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar4.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item10.png",
+            "/images/blog/item6.png"
+        ]
+    },
+    {
+        "id": 12,
+        "tag": "design",
+        "category": "personal financial",
+        "img": "/images/blog/item12.png",
+        "title": "5 Steps for Creating a Personal Finance Plan",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar5.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item13.png",
+            "/images/blog/item10.png"
+        ]
+    },
+    {
+        "id": 13,
+        "tag": "experience",
+        "category": "financial planning",
+        "img": "/images/blog/item13.png",
+        "title": "How does writing influence your personal brand",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar3.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item11.png",
+            "/images/blog/item12.png"
+        ]
+    },
+    {
+        "id": 14,
+        "tag": "interview",
+        "category": "cryptocurrency financial",
+        "img": "/images/blog/item4.png",
+        "title": "How to write content about your photographs",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar4.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item6.png",
+            "/images/blog/item2.png"
+        ]
+    },
+    {
+        "id": 15,
+        "tag": "business",
+        "category": "blockchain",
+        "img": "/images/blog/item12.png",
+        "title": "Where to grow your business as a photographer",
+        "author": "Avitex",
+        "avatar": "/images/member/avatar5.png",
+        "date": "2 days ago",
+        "desc": "The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…",
+        "listImg": [
+            "/images/blog/item7.png",
+            "/images/blog/item4.png"
+        ]
+    }
+]

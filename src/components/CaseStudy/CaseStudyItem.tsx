@@ -14,13 +14,13 @@ const CaseStudyItemOne: React.FC<Props> = ({ data, style, number }) => {
         <>
             {style === 'style-one' &&
                 <div className="case-study-item item-filter">
-                    <Link 
-                        className="item-main" href="case-studies-detail"
-                        href={"/case-studies/[slug]"}
-                        as={"/case-studies/" + data.title.toLowerCase().replace(/ /g, '-')}
+                    <Link
+                        className="item-main"
+                        href={"/case-studies/detail/[slug]"}
+                        as={"/case-studies/detail/" + data.title.toLowerCase().replace(/ /g, '-')}
                     >
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full rounded-xl block" src={data.img} alt=""/>
+                            <img className="w-full h-full rounded-xl block" src={data.img} alt="" />
                         </div>
                         <div className="infor bg-white rounded-lg px-6 py-4 text-center">
                             <div className="category text-button-uppercase text-secondary">{data.subTitle}</div>
@@ -31,13 +31,13 @@ const CaseStudyItemOne: React.FC<Props> = ({ data, style, number }) => {
             }
             {style === 'style-two' &&
                 <div className="case-study-item style-two item-filter">
-                    <div className="item-main"> 
+                    <div className="item-main">
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full rounded-xl display-block" src={data.img} alt=""/>
-                            <Link 
-                                className="flex flex-col items-center py-8 px-5 bg-white rounded-full text-center" href="case-studies/case-studies-detail"
-                                href={"/case-studies/[slug]"}
-                                as={"/case-studies/" + data.title.toLowerCase().replace(/ /g, '-')}
+                            <img className="w-full h-full rounded-xl display-block" src={data.img} alt="" />
+                            <Link
+                                className="flex flex-col items-center py-8 px-5 bg-white rounded-full text-center"
+                                href={"/case-studies/detail/[slug]"}
+                                as={"/case-studies/detail/" + data.title.toLowerCase().replace(/ /g, '-')}
                             >
                                 <div className="text-button-small text-blue">Discovery</div>
                                 <Icon.ArrowUpRight className="text-blue" />

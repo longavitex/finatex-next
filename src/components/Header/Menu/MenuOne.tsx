@@ -78,7 +78,7 @@ const MenuOne = () => {
                                 <ul className="sub-nav">
                                     <li className={`sub-nav-item ${pathname === '/service/service-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/service/service-one">Service Style 1</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/service/service-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/service/service-two">Service Style 2</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/service/service-detail' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/service/service-detail">Services Detail</Link></li>
+                                    <li className={`sub-nav-item ${pathname.includes('/service/service-detail') ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/service/service-detail">Services Detail</Link></li>
                                 </ul>
                             </li>
                             <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/case-studies/') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
@@ -88,6 +88,7 @@ const MenuOne = () => {
                                 <ul className="sub-nav">
                                     <li className={`sub-nav-item ${pathname === '/case-studies/case-studies-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/case-studies-one">Case Studies 1</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/case-studies/case-studies-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/case-studies-two">Case Studies 2</Link></li>
+                                    <li className={`sub-nav-item ${pathname.includes('/case-studies/detail') ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/case-studies/detail">Case Studies Detail</Link></li>
                                 </ul>
                             </li>
                             <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/pages/') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
@@ -108,9 +109,8 @@ const MenuOne = () => {
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-list-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-one">Blog List 1</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-list-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-list-two">Blog List 2</Link></li>
                                     <li className={`sub-nav-item ${pathname === '/blog/blog-grid' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-grid">Blog Grid</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/blog/blog-masonry' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-masonry">Blog Masonry</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/blog/blog-detail-one' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-detail-one">Blog Detail 1</Link></li>
-                                    <li className={`sub-nav-item ${pathname === '/blog/blog-detail-two' ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-detail-two">Blog Detail 2</Link></li>
+                                    <li className={`sub-nav-item ${pathname.includes('/blog/blog-detail-one') ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-detail-one">Blog Detail 1</Link></li>
+                                    <li className={`sub-nav-item ${pathname.includes('/blog/blog-detail-two') ? 'active' : ''}`}> <Link className="sub-nav-link font-medium" href="/blog/blog-detail-two">Blog Detail 2</Link></li>
                                 </ul>
                             </li>
                             <li className={`nav-item h-full flex items-center justify-center ${pathname.includes('/contact/') ? 'active' : ''}`}><Link className="nav-link text-title flex items-center gap-1" href="#!">
@@ -186,7 +186,7 @@ const MenuOne = () => {
                                     <ul className={`sub-nav-mobile ${openSubNavMobile === 4 ? 'open' : ''}`}>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/case-studies/case-studies-one">Case Studies 1</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/case-studies/case-studies-two">Case Studies 2</Link></li>
-                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/case-studies/case-studies-detail">Case Studies Detail</Link></li>
+                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/case-studies/detail">Case Studies Detail</Link></li>
                                     </ul>
                                 </li>
                                 <li className={`nav-item-mobile h-full flex-column gap-2 pt-4 pb-2 pl-3 pr-3 pointer pages ${openSubNavMobile === 5 ? 'active' : ''}`}
@@ -211,7 +211,6 @@ const MenuOne = () => {
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"><Link className="sub-nav-link text-base" href="/blog/blog-list-one">Blog List 1</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/blog/blog-list-two">Blog List 2</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"><Link className="sub-nav-link text-base" href="/blog/blog-grid">Blog Grid</Link></li>
-                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/blog/blog-masonry">Blog Masonry</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"><Link className="sub-nav-link text-base" href="/blog/blog-detail-one">Blog Detail 1</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/blog/blog-detail-two">Blog Detail 2</Link></li>
                                     </ul>

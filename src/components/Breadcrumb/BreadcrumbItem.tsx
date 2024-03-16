@@ -24,7 +24,7 @@ const BreadcrumbItem: React.FC<Props> = ({ link, img, title, desc }) => {
                 </div>
                 <div className="text-nav xl:w-1/2 md:w-3/5">
                     <div className="heading3 text-white">{title}</div>
-                    <div className="sub-heading mt-2 text-white font-normal">{desc}</div>
+                    <div className="sub-heading mt-4 text-white font-normal">{desc}</div>
                 </div>
             </div>
         </div>

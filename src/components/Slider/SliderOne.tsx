@@ -10,7 +10,7 @@ import 'swiper/css/bundle';
 const SliderOne = () => {
     return (
         <>
-            <div className="slider-block style-one">
+            <section className="slider-block style-one">
                 <div className="prev-arrow flex items-center justify-center">
                     <Icon.CaretLeft className="text-white heading6" weight="bold" />
                 </div>
@@ -141,7 +141,7 @@ const SliderOne = () => {
                 <div className="next-arrow flex items-center justify-center">
                     <Icon.CaretRight className="text-white heading6" weight="bold" />
                 </div>
-            </div>
+            </section>
         </>
     )
 }

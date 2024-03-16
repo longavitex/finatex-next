@@ -10,13 +10,13 @@ export default function ServiceStyleOne() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="header">
+                <header id="header">
                     <TopNavOne />
                     <MenuOne />
-                </div>
-                <div className="content">
+                </header>
+                <main className="content">
                     <BreadcrumbItem link="Our Services" img="/images/banner/about1.png" title="Our Services" desc="Expand your knowledge and skills in cryptocurrency trading through our educational resources." />
-                    <div className="content-detail-block py-[100px]">
+                    <div className="content-detail-block lg:py-[100px] sm:py-16 py-10">
                         <div className="container">
                             <div className="flex">
                                 <div className="col-12 xl:w-3/4">
@@ -97,37 +97,37 @@ export default function ServiceStyleOne() {
                                                 <i className="ph-bold ph-caret-right hidden"></i>
                                             </a>
                                             <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-investment-advice.html">
-                                            <div className="text-button text-secondary">
-                                                Payment Solution
+                                                <div className="text-button text-secondary">
+                                                    Payment Solution
                                                 </div><i className="ph-bold ph-caret-right hidden"></i>
-                                                </a>
-                                                <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-cryptocurrency-trading.html">
-                                            <div className="text-button text-secondary">
-                                                Cryptocurrency Financial
+                                            </a>
+                                            <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-cryptocurrency-trading.html">
+                                                <div className="text-button text-secondary">
+                                                    Cryptocurrency Financial
                                                 </div><i className="ph-bold ph-caret-right hidden"></i>
-                                                </a>
-                                                <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-research-analysis.html">
-                                            <div className="text-button text-secondary">
-                                                Blockchain
+                                            </a>
+                                            <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-research-analysis.html">
+                                                <div className="text-button text-secondary">
+                                                    Blockchain
                                                 </div><i className="ph-bold ph-caret-right hidden"></i>
-                                                </a>
-                                                <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-education-resources.html">
-                                            <div className="text-button text-secondary">
-                                                Online Banking
+                                            </a>
+                                            <a className="nav-item rounded-lg flex-between p-12 mt-12" href="service-education-resources.html">
+                                                <div className="text-button text-secondary">
+                                                    Online Banking
                                                 </div><i className="ph-bold ph-caret-right hidden"></i>
-                                                </a>
-                                                <a className="nav-item rounded-lg flex-between p-12 mt-12 active" href="service-portfolio-management.html">
-                                            <div className="text-button text-secondary">
-                                                Personal Financial</div><i className="ph-bold ph-caret-right hidden"></i></a></div>
+                                            </a>
+                                            <a className="nav-item rounded-lg flex-between p-12 mt-12 active" href="service-portfolio-management.html">
+                                                <div className="text-button text-secondary">
+                                                    Personal Financial</div><i className="ph-bold ph-caret-right hidden"></i></a></div>
                                     </div>
-                                    <div className="ads-block rounded-lg mt-10 relative">
+                                    <div className="ads-block rounded-lg md:mt-10 mt-6 relative">
                                         <div className="bg-img"> <img src="/images/component/ads.png" alt="" /></div>
                                         <div className="text flex flex-col justify-between absolute left-0 top-0 w-full h-full p-8">
                                             <div className="title">
                                                 <div className="heading5 text-white">Let’s talk</div>
                                                 <div className="body3 text-white mt-4">If you have project,<br />contact us!</div>
                                             </div>
-                                            <div className="button-block mt-10"> <a className="button-main hover:bg-black hover:text-white inline-block bg-white text-button" href="contact-style-one.html">Learn now</a>
+                                            <div className="button-block md:mt-10 mt-6"> <a className="button-main hover:bg-black hover:text-white inline-block bg-white text-button" href="contact-style-one.html">Learn now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -136,11 +136,11 @@ export default function ServiceStyleOne() {
                         </div>
                     </div>
                     <CTA />
-                </div>
-                <div id="footer">
+                </main>
+                <footer id="footer">
                     <Footer />
-                </div>
-            </div>
+                </footer>
+            </div >
         </>
     )
 }

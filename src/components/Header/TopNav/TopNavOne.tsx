@@ -20,11 +20,14 @@ const TopNavOne = () => {
                         </div>
                     </div>
                     <div className="right-block flex items-center gap-5">
-                        <select className="border-none outline-none bg-dark text-white pr-2 caption2">
-                            <option value="English">English</option>
-                            <option value="France">France</option>
-                            <option value="Espana">Espana</option>
-                        </select>
+                        <div className="select-block relative">
+                            <select className="border-none outline-none bg-dark text-white p-2 caption2">
+                                <option value="English">English</option>
+                                <option value="France">France</option>
+                                <option value="Espana">Espana</option>
+                            </select>
+                            <Icon.CaretDown weight="bold" className="text-xs text-white icon -right-2" />
+                        </div>
                         <div className="line h-6 w-px bg-grey max-sm:hidden"> </div>
                         <div className="list-social flex items-center gap-2.5 style-one max-sm:hidden">
                             <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" href="https://www.facebook.com/" target="_blank">

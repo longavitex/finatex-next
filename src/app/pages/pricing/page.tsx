@@ -18,14 +18,14 @@ export default function Pricing() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="header">
+                <header id="header">
                     <TopNavOne />
                     <MenuOne />
-                </div>
-                <div className="content">
+                </header>
+                <main className="content">
                     <BreadcrumbItem link="Contact us" img="/images/banner/case-studies.png" title="Contact us" desc="Discover transparent pricing options tailored to your budget on our Pricing page." />
                     <div className="pricing-block style-pricing">
-                        <div className="pricing-main py-[100px]">
+                        <div className="pricing-main lg:py-[100px] sm:py-16 py-10">
                             <div className="container">
                                 <div className="heading flex flex-col items-center gap-y-8">
                                     <div className="title text-center">
@@ -51,7 +51,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover:text-white hover:bg-blue bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-blue text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -81,7 +81,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover-button-black bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-white text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -112,7 +112,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover:text-white hover:bg-blue bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-blue text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -147,7 +147,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover:text-white hover:bg-blue bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-blue text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -178,7 +178,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover-button-black bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-white text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -209,7 +209,7 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="button-block w-full mt-6"><a className="button-main text-center block hover:text-white hover:bg-blue bg-white border border-blue text-black text-button w-full py-3 rounded-full" href="#!">Get Started</a>
                                                 </div>
-                                                <div className="list-feature mt-10 flex flex-col gap-3">
+                                                <div className="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                                     <div className="item flex items-center gap-4"> <Icon.CheckCircle weight="fill" className="text-blue text-3xl" />
                                                         <div className="body3">20,000+ of PNG & SVG graphics</div>
                                                     </div>
@@ -237,11 +237,11 @@ export default function Pricing() {
                         </div>
                     </div>
                     <CTA />
-                </div>
-                <div id="footer">
+                </main>
+                <footer id="footer">
                     <Footer />
-                </div>
-            </div>
+                </footer>
+            </div >
         </>
     )
 }

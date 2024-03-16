@@ -5,9 +5,9 @@ import AboutTwo from "@/components/Section/About/AboutTwo"
 import CounterTwo from "@/components/Section/Counter/CounterTwo"
 import ServiceAboutTwo from "@/components/Section/Service/ServiceAboutTwo"
 import serviceData from '@/data/service.json'
-import FormCtaTwo from "@/components/Section/FormCTA/FormCtaTwo"
+import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo"
 import OurTeam from "@/components/Section/OurTeam/OurTeam"
-import Partner from "@/components/Section/Partner/Partner"
+import Partner from "@/components/Section/Partner/PartnerAbout"
 import CTA from "@/components/Section/CTA/CTA"
 import Footer from "@/components/Footer/Footer"
 
@@ -15,23 +15,23 @@ export default function AboutStyleTwo() {
   return (
     <>
       <div className="overflow-x-hidden">
-        <div id="header">
+        <header id="header">
           <TopNavOne />
           <MenuOne />
-        </div>
-        <div className="content">
+        </header>
+        <main className="content">
           <BreadcrumbItem link="About Us" img="/images/banner/about1.png" title="About Us" desc="We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy." />
           <AboutTwo />
           <ServiceAboutTwo data={serviceData} />
-          <FormCtaTwo />
+          <FormRequestTwo />
           <OurTeam />
           <Partner />
           <CTA />
-        </div>
-        <div id="footer">
+        </main>
+        <footer id="footer">
           <Footer />
-        </div>
-      </div>
+        </footer>
+      </div >
     </>
   )
 }
