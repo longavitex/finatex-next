@@ -55,7 +55,7 @@ const MenuTwo = () => {
                             </Link>
                                 <ul className="sub-nav">
                                     <li className={`sub-nav-item ${pathname === '/' ? 'active' : ''}`}><Link className="sub-nav-link font-medium" href="/">Payment Solution</Link></li>
-                                    <li className={`sub-nav-item`}> <Link className="sub-nav-link font-medium" href="/homepages/home2">Financial Planning</Link></li>
+                                    <li className={`sub-nav-item active`}> <Link className="sub-nav-link font-medium" href="/homepages/home2">Financial Planning</Link></li>
                                     <li className={`sub-nav-item`}> <Link className="sub-nav-link font-medium" href="/homepages/home3">Online Banking</Link></li>
                                     <li className={`sub-nav-item`}> <Link className="sub-nav-link font-medium" href="/homepages/home4">Personal Finance</Link></li>
                                     <li className={`sub-nav-item`}> <Link className="sub-nav-link font-medium" href="/homepages/home5">Cryptocurrency Financial</Link></li>
@@ -125,7 +125,7 @@ const MenuTwo = () => {
                         </ul>
                     </div>
                     <div className="menu-right-block max-sm:hidden">
-                        <div className="list-social flex items-center gap-2.5 style-one">
+                        <div className="list-social style-two flex items-center gap-2.5 style-one">
                             <Link className="item rounded-full w-7 h-7 border-grey border flex items-center justify-center" href="https://www.facebook.com/" target="_blank">
                                 <i className="icon-facebook text-sm"></i>
                             </Link>

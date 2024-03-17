@@ -30,7 +30,7 @@ export default function Home() {
           <FaqsOne />
           <FormRequestOne />
           <BlogOne data={blogData} />
-          <PartnerOne />
+          <PartnerOne classname='bg-blue lg:mt-[100px] sm:mt-16 mt-10' />
         </main>
         <footer id="footer">
           <Footer />

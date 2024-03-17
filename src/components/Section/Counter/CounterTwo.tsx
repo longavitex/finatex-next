@@ -6,8 +6,8 @@ interface Props {
 
 const CounterTwo: React.FC<Props> = ({ classname }) => {
     return (
-        <div className={`counter-block ${classname}`}>
-            <div className="container">
+        <div className="container">
+            <div className={`counter-block ${classname}`}>
                 <div className="grid xl:grid-cols-4 grid-cols-2 gap-y-8">
                     <div className="item">
                         <div className="flex flex-col items-center">

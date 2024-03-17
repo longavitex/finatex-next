@@ -7,10 +7,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 
-const PartnerOne = () => {
+interface Props {
+    classname: string
+}
+
+const PartnerOne: React.FC<Props> = ({ classname }) => {
     return (
         <>
-            <div className="brand-block py-9 bg-blue lg:mt-[100px] sm:mt-16 mt-10">
+            <div className={`brand-block py-9 ${classname}`}>
                 <div className="container">
                     <div className="list-brand">
                         <Swiper
