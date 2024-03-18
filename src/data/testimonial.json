@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "fintech",
+        "author": "Maverick",        
+        "position": "Chariman, Avitex Inc",        
+        "img": "/images/member/avatar1.png",
+        "desc": "Working with this agency has been a game-changer for our business. Their team is knowledgeable, responsive, and always goes the extra mile."
+    },
+    {
+        "id": 2,
+        "category": "fintech",
+        "author": "Leonardo",        
+        "position": "Designer, TechX Corp",        
+        "img": "/images/member/avatar2.png",
+        "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
+    },
+    {
+        "id": 3,
+        "category": "fintech",
+        "author": "De Rossi",        
+        "position": "CEO, Hivelab Agency",        
+        "img": "/images/member/avatar3.png",
+        "desc": "I'm extremely satisfied with your services! Your meticulous financial planning helped me manage my assets efficiently and achieve my financial goals."
+    },
+    {
+        "id": 4,
+        "category": "fintech",
+        "author": "Benjamin",        
+        "position": "Chariman, Avitex Inc",        
+        "img": "/images/member/avatar4.png",
+        "desc": "I highly value and appreciate your services and the attention to detail you provide in crafting financial plans. Thank you for helping shape my financial future!"
+    },
+    {
+        "id": 5,
+        "category": "fintech",
+        "author": "Alexander",        
+        "position": "Designer, ThreeS Corp",        
+        "img": "/images/member/avatar5.png",
+        "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
+    }
+]

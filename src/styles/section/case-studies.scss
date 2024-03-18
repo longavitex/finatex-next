@@ -82,6 +82,20 @@
             }
         }
     }
+
+    &.style-three {
+        .container {
+            .swiper {
+                overflow: unset;
+            }
+
+            .item-main .bg-img a {
+                &:hover {
+                    background-color: var(--gradient);
+                }
+            }
+        }
+    }
 }
 
 .case-study-item {
@@ -135,6 +149,10 @@
             .infor {
                 .heading6 {
                     transition: 0.3s;
+
+                    &:hover {
+                        color: var(--blue);
+                    }
                 }
             }
 
@@ -152,10 +170,16 @@
                         transform: translateX(0);
                     }
                 }
+            }
+        }
+    }
 
-                .infor {
-                    .heading6 {
-                        text-decoration: underline;
+    &.style-three {
+        .item-main {
+            .infor {
+                .heading6 {
+                    &:hover {
+                        color: var(--gradient);
                     }
                 }
             }

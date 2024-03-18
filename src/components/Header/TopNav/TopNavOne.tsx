@@ -10,7 +10,6 @@ const TopNavOne = () => {
                 <div className="container flex items-center justify-between h-[44px]">
                     <div className="left-block flex items-center">
                         <div className="location flex items-center max-lg:hidden">
-                            <i className="ph-light ph-map-pin text-white fs-20"></i>
                             <Icon.MapPin className="text-white text-xl" />
                             <span className="ml-2 caption1 text-white">160 Broadway 15th floor, New York</span>
                         </div>

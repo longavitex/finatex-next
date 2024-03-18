@@ -7,6 +7,14 @@
         background-size: cover;
     }
 
+    &.style-three {
+
+        .heading2,
+        .caption1 {
+            color: var(--black);
+        }
+    }
+
     &.style-about {
         .form-block {
             background-color: var(--grey);

@@ -286,6 +286,49 @@
             }
         }
     }
+
+    &.style-four {
+        box-shadow: none;
+
+        .menu-center-block {
+            .nav-item {
+
+                &:hover,
+                &.active {
+                    .nav-link {
+                        color: var(--success);
+                    }
+                }
+            }
+
+            .sub-nav {
+                .sub-nav-item {
+
+                    &:hover,
+                    &.active {
+                        .sub-nav-link {
+                            color: var(--success);
+
+                            &::before {
+                                background-color: var(--success);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .icon-call,
+        .text {
+            display: block !important;
+
+            i {
+                &::before {
+                    color: var(--white);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1169.99px) {

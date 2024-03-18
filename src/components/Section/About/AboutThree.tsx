@@ -1,7 +1,12 @@
+'use client'
+
 import Link from "next/link"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import { useState } from "react";
 
 const AboutThree = () => {
+    const [openVideo, setOpenVideo] = useState(false)
+    
     return (
         <div className="style-three">
             <div className=" layout-item mt-[100px]">
@@ -20,11 +25,22 @@ const AboutThree = () => {
                         <div className="w-full lg:w-1/2 lg:pl-[55px]">
                             <div className="bg-video w-full overflow-hidden rounded-2xl relative">
                                 <img className="w-full block" src="/images/blog/item2.png" alt="" />
-                                <div className="absolute w-20 h-20 bg-white flex items-center justify-center rounded-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 duration-300 cursor-pointer text-gradient hover:bg-gradient hover:text-white">
+                                <div
+                                    className="absolute w-20 h-20 bg-white flex items-center justify-center rounded-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 duration-300 cursor-pointer text-gradient hover:bg-gradient hover:text-white"
+                                    onClick={() => setOpenVideo(true)}
+                                >
                                     <Icon.Play weight="fill" className="text-3xl" />
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`modal-video-block`} onClick={() => setOpenVideo(false)}>
+                <div className={`modal-video-main ${openVideo ? 'open' : ''}`} onClick={(e) => { e.stopPropagation() }}>
+                    <div className="video-block h-full w-full">
+                        <iframe src="https://www.youtube.com/embed/RaQKTgGyyyo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>

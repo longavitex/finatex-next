@@ -17,7 +17,7 @@ const ServiceTwo: React.FC<Props> = ({ data }) => {
                         <div className="body3 text-secondary">We specialize in providing asset management services and solutions for individuals and organizations.</div>
                     </div>
                     <div className="w-full xl:pl-[72px] list-service grid lg:grid-cols-2 sm:grid-cols-2 gap-8 max-xl:mt-8">
-                        {data.slice(6, 10).map((item, index) => (
+                        {data.filter(item => item.category === 'financial planning').slice(0, 4).map((item, index) => (
                             <ServiceItem data={item} style='style-two' number={index} key={index} />
                         ))}
                     </div>

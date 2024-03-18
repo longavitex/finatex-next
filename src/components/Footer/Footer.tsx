@@ -32,7 +32,7 @@ const Footer = () => {
                         <div className="w-1/2">
                             <div className="footer-navigate flex items-center justify-center gap-20">
                                 <div className="footer-nav-item">
-                                    <div className="item-heading text-button-small text-white">Quick Links</div>
+                                    <div className="item-heading text-button-sm text-white">Quick Links</div>
                                     <ul className="list-nav mt-1">
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="about-one.html">About us</a></li>
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="service-one.html">Services</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div className="footer-nav-item">
-                                    <div className="item-heading text-button-small text-white">Pages</div>
+                                    <div className="item-heading text-button-sm text-white">Pages</div>
                                     <ul className="list-nav mt-1">
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="faqs.html">FAQs</a></li>
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="pricing.html">Pricing</a></li>
@@ -50,7 +50,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div className="footer-nav-item">
-                                    <div className="item-heading text-button-small text-white">Blog</div>
+                                    <div className="item-heading text-button-sm text-white">Blog</div>
                                     <ul className="list-nav mt-1">
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-list-one.html">Blog List</a></li>
                                         <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-grid.html">Blog Grid</a></li>
@@ -62,7 +62,7 @@ const Footer = () => {
                         </div>
                         <div className="w-1/4">
                             <div className="company-contact">
-                                <div className="heading text-button-small text-white">Newsletter</div>
+                                <div className="heading text-button-sm text-white">Newsletter</div>
                                 <div className="mt-3 flex items-center">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M26.43 16.1254C25.785 16.1254 25.275 15.6004 25.275 14.9704C25.275 14.4154 24.72 13.2604 23.79 12.2554C22.875 11.2804 21.87 10.7104 21.03 10.7104C20.385 10.7104 19.875 10.1854 19.875 9.55539C19.875 8.92539 20.4 8.40039 21.03 8.40039C22.53 8.40039 24.105 9.21039 25.485 10.6654C26.775 12.0304 27.6 13.7254 27.6 14.9554C27.6 15.6004 27.075 16.1254 26.43 16.1254Z" fill="#C1D8FF"></path>

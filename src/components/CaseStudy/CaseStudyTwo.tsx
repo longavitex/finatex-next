@@ -40,7 +40,7 @@ const CaseStudyTwo: React.FC<Props> = ({ data }) => {
                     </div>
                     <div className="list-case-studies grid xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 gap-8 gap-y-10 md:mt-10 mt-6">
                         {data.filter(item => activeTab === 'all' ? true : item.category === activeTab).map((item, index) => (
-                            <CaseStudyItem data={item} style='style-two' number={index} key={index} />
+                            <CaseStudyItem data={item} style='style-two' key={index} />
                         ))}
                     </div>
                 </div>

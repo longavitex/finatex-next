@@ -16,7 +16,7 @@ const ServiceFive: React.FC<Props> = ({ title, data }) => {
                         <div className="heading3 lg:w-7/12 text-center pb-10">{title}</div>
                     )}
                     <div className="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-8 gap-y-10">
-                        {data.slice(0, 8).map((item, index) => (
+                        {data.slice(0, 6).map((item, index) => (
                             <ServiceItem data={item} style='style-one' number={index} key={index} />
                         ))}
                     </div>

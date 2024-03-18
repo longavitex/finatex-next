@@ -1,5 +1,5 @@
-import MenuThree from "@/components/Header/Menu/MenuThree";
-import TopNavThree from "@/components/Header/TopNav/TopNavThree";
+import MenuFour from "@/components/Header/Menu/MenuFour";
+import TopNavFour from "@/components/Header/TopNav/TopNavFour";
 import SliderThree from "@/components/Slider/SliderThree";
 import ServiceThreeFirst from "@/components/Section/Service/ServiceThreeFirst";
 import AboutThree from "@/components/Section/About/AboutThree";
@@ -16,13 +16,13 @@ import Footer from "@/components/Footer/Footer";
 import TestimonialThree from "@/components/Section/Testimonial/TestimonialThree";
 
 
-export default function HomeThree() {
+export default function HomeFour() {
     return (
         <>
             <div className="overflow-x-hidden">
                 <header id="header">
-                    <TopNavThree />
-                    <MenuThree />
+                    <TopNavFour />
+                    <MenuFour />
                 </header>
                 <main className="content">
                     <SliderThree />

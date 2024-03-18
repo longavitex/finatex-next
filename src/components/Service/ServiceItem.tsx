@@ -20,7 +20,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
                         <div className="heading flex items-center justify-between">
-                            <i className={`${data.icon} text-blue text-6xl`}></i>
+                            <i className={`${data.icon} text-blue md:text-6xl text-5xl`}></i>
                             <div className="number heading3 text-placehover">{number + 1}</div>
                         </div>
                         <div className="heading6 hover:text-blue duration-300 mt-6">{data.title}</div>
@@ -36,7 +36,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
                         <div className="icon">
-                            <i className={`${data.icon} text-blue text-5xl`}></i>
+                            <i className={`${data.icon} text-blue md:text-5xl text-4xl`}></i>
                         </div>
                         <div className="infor">
                             <div className="heading7 hover:text-blue duration-300">{data.title}</div>
@@ -49,6 +49,19 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                     </Link>
                 </div>
             }
+            {style === 'style-three' &&
+                <div className="service-item px-8 py-10 bg-white rounded-lg">
+                    <Link
+                        className="service-item-main flex flex-col items-center h-full"
+                        href={"/service/service-detail/[slug]"}
+                        as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
+                    >
+                        <i className={`${data.icon} text-gradient md:text-6xl text-5xl`}></i>
+                        <div className="heading7 text-center hover:text-gradient duration-300 mt-6">{data.title}</div>
+                        <div className="caption1 text-secondary text-center mt-1.5">{data.desc}</div>
+                    </Link>
+                </div>
+            }
             {style === 'style-four' &&
                 <div className="service-item p-8 bg-white rounded-lg border border-line hover-box-shadow">
                     <Link
@@ -56,7 +69,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         href={"/service/service-detail/[slug]"}
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
-                        <i className={`${data.icon} text-black text-6xl`}></i>
+                        <i className={`${data.icon} text-black md:text-6xl text-5xl`}></i>
                         <div className="heading7 hover:text-blue duration-300 mt-6">{data.title}</div>
                         <div className="text-secondary mt-2">{data.desc}</div>
                         <div className="text-button-sm underline mt-3">Read More</div>
@@ -71,7 +84,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
                         <div className="heading flex items-center justify-between">
-                            <i className={`${data.icon} text-blue text-6xl`}></i>
+                            <i className={`${data.icon} text-blue md:text-6xl text-5xl`}></i>
                             <div className="number heading3 text-placehover">{number + 1}</div>
                         </div>
                         <div className="heading7 hover:text-blue duration-300 mt-6">{data.title}</div>
@@ -91,7 +104,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
                         <div className="heading flex items-center gap-4">
-                            <i className={`${data.icon} text-blue text-5xl`}></i>
+                            <i className={`${data.icon} text-blue md:text-5xl text-4xl`}></i>
                             <div className="heading7 hover:text-blue duration-300">{data.title}</div>
                         </div>
                         <div className="text-secondary mt-4">{data.desc}</div>
@@ -109,7 +122,7 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         href={"/service/service-detail/[slug]"}
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
-                        <i className={`${data.icon} text-blue text-6xl`}></i>
+                        <i className={`${data.icon} text-blue md:text-6xl text-5xl`}></i>
                         <div className="heading7 text-center hover:text-blue duration-300 mt-6">{data.title}</div>
                         <div className="caption1 text-secondary text-center mt-1.5">{data.desc}</div>
                     </Link>

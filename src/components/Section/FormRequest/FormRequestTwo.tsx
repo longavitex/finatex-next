@@ -9,10 +9,10 @@ interface Props {
 
 const FormRequestTwo: React.FC<Props> = ({ bgImg, classname }) => {
     return (
-        <div className={`form-request-block ${classname} relative`} style={{ backgroundImage: `url('${bgImg}')` }}>
-            {/* <div className="bg-img absolute top-0 left-0 w-full h-full z-[-1]">
-                <img src="/images/banner/form-cta-about.png" alt="" className="w-full h-full object-cover" />
-            </div> */}
+        <div
+            className={`form-request-block ${classname} relative`}
+            style={bgImg ? { backgroundImage: `url('${bgImg}')` } : {backgroundColor: `var(--surface)`}}
+        >
             <div className="container h-full py-[60px]">
                 <div className="flex items-center justify-between h-full">
                     <div className="lg:w-1/2">

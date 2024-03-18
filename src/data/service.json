@@ -42,59 +42,59 @@
         "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
     },
     {
-        "icon": "icon-coin-chair",
+        "icon": "icon-coin-hand",
         "category": "financial planning",
-        "title": "Cryptocurrency Trading",
+        "title": "Budget planning",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
     },
     {
-        "icon": "icon-hand-tick",
+        "icon": "icon-coin-pig",
         "category": "financial planning",
-        "title": "Portfolio Management",
+        "title": "Savings advice",
         "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
     },
     {
-        "icon": "icon-hand-house",
+        "icon": "icon-coin-virus",
         "category": "financial planning",
-        "title": "Investment Advice",
+        "title": "Financial assessment",
         "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
     },
     {
-        "icon": "icon-gear-warning",
+        "icon": "icon-hand-protect",
         "category": "financial planning",
-        "title": "Risk Management",
+        "title": "Insurance advice",
         "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
     },
     {
-        "icon": "icon-text-search",
-        "category": "financial planning",
-        "title": "Research and Analysis",
-        "desc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "icon": "icon-hand-touch",
+        "category": "online banking",
+        "title": "Internet Banking",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "With our Internet Banking service, you can access your accounts anytime, anywhere"
     },
     {
-        "icon": "icon-education text",
-        "category": "financial planning",
-        "title": "Education and Resources",
-        "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "icon": "icon-user-lock",
+        "category": "online banking",
+        "title": "Mobile Banking",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": "Our Mobile Banking app brings you fast and convenient mobile financial experience."
     },
     {
-        "icon": "icon-hand-house",
-        "category": "financial planning",
-        "title": "Investment Advice",
+        "icon": "icon-coin-bag",
+        "category": "online banking",
+        "title": "Money Transfers",
         "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Our money transfer service allows you to send money quickly and securely to anywhere in the world"
     },
     {
-        "icon": "icon-gear-warning",
-        "category": "financial planning",
-        "title": "Risk Management",
+        "icon": "icon-chart-blue",
+        "category": "online banking",
+        "title": "Account Management",
         "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
-        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+        "shortDesc": "Managing your accounts has never been easier with Online Banking. Check your balances."
     }
 ]
