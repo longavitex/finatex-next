@@ -1,6 +1,7 @@
 import MenuFour from "@/components/Header/Menu/MenuFour";
 import TopNavFour from "@/components/Header/TopNav/TopNavFour";
-import SliderThree from "@/components/Slider/SliderThree";
+import SliderFour from "@/components/Slider/SliderFour";
+import PartnerOne from "@/components/Section/Partner/PartnerOne";
 import ServiceThreeFirst from "@/components/Section/Service/ServiceThreeFirst";
 import AboutThree from "@/components/Section/About/AboutThree";
 import serviceData from '@/data/service.json'
@@ -25,7 +26,8 @@ export default function HomeFour() {
                     <MenuFour />
                 </header>
                 <main className="content">
-                    <SliderThree />
+                    <SliderFour />
+                    <PartnerOne classname='bg-deep-purple' />
                     <ServiceThreeFirst />
                     <AboutThree />
                     <ServiceThree data={serviceData} />
