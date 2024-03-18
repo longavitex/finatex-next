@@ -35,7 +35,7 @@ const MenuTwo = () => {
 
     return (
         <>
-            <div className={`header-menu style-one bg-white ${fixedHeader ? 'fixed' : ''}`}>
+            <header className={`header-menu style-one bg-white ${fixedHeader ? 'fixed' : ''}`}>
                 <div className="container flex items-center justify-between h-20">
                     <Link className="menu-left-block" href="/">
                         <Image
@@ -143,6 +143,9 @@ const MenuTwo = () => {
                             </Link>
                         </div>
                     </div>
+                    <div className="menu-humburger lg:hidden pointer" onClick={() => setOpenMenuMobile(!openMenuMobile)}>
+                        <Icon.List className="text-2xl" weight="bold" />
+                    </div>
                 </div>
                 <div id="menu-mobile-block" className={`${openMenuMobile && 'open'}`}>
                     <div className="menu-mobile-main">
@@ -155,8 +158,8 @@ const MenuTwo = () => {
                                         <Icon.CaretRight className="text-base" />
                                     </a>
                                     <ul className={`sub-nav-mobile ${openSubNavMobile === 1 ? 'open' : ''}`}>
-                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2 active"><Link className="sub-nav-link text-base" href="/">Payment Solution</Link></li>
-                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/homepages/home2">Financial Planning</Link></li>
+                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"><Link className="sub-nav-link text-base" href="/">Payment Solution</Link></li>
+                                        <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2 active"> <Link className="sub-nav-link text-base" href="/homepages/home2">Financial Planning</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/homepages/home3">Online Banking</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/homepages/home4">Personal Finance</Link></li>
                                         <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2"> <Link className="sub-nav-link text-base" href="/homepages/home5">Cryptocurrency Financial</Link></li>
@@ -239,7 +242,7 @@ const MenuTwo = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
         </>
     )
 }

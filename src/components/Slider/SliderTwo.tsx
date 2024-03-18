@@ -11,10 +11,10 @@ const SliderTwo = () => {
                     <div className="container">
                         <div className="text-content flex flex-col justify-between gap-y-10">
                             <div className="title">
-                                <div className="heading2 animate__animated animate__fadeInUp animate__delay-0-2s">Reach financial goals <br />with our expert <br />guidance & solutions</div>
-                                <div className="body2 text-secondary mt-4 animate__animated animate__fadeInUp animate__delay-0-5s">Get personalized financial advice to help reach your financial goals.</div>
+                                <div className="heading2 animate__animated animate__fadeInLeft animate__delay-0-2s">Reach financial goals <br />with our expert <br />guidance & solutions</div>
+                                <div className="body2 text-secondary mt-4 animate__animated animate__fadeInLeft animate__delay-0-8s">Get personalized financial advice to help reach your financial goals.</div>
                             </div>
-                            <div className="button-block animate__animated animate__fadeInUp animate__delay-0-8s">
+                            <div className="button-block animate__animated animate__fadeInLeft animate__delay-0-8s">
                                 <input className="body3 text-secondary" type="text" placeholder="Email" />
                                 <a className="button-main inline-flex hover:bg-blue bg-black text-white text-button px-7 py-3 rounded-full items-center gap-2" href="contact-two.html">
                                     <Icon.ArrowRight className='text-white' />

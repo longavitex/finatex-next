@@ -28,6 +28,27 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                     </Link>
                 </div>
             }
+            {style === 'style-two' &&
+                <div className="service-item py-7 px-6 bg-white rounded-lg border border-line box-shadow-sm hover-box-shadow">
+                    <Link
+                        className="service-item-main flex items-center gap-8 h-full"
+                        href={"/service/service-detail/[slug]"}
+                        as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
+                    >
+                        <div className="icon">
+                            <i className={`${data.icon} text-blue text-5xl`}></i>
+                        </div>
+                        <div className="infor">
+                            <div className="heading7 hover:text-blue duration-300">{data.title}</div>
+                            <div className="text-secondary mt-2">{data.shortDesc}</div>
+                            <div className="flex items-center gap-1 mt-2">
+                                <div className="text-button-sm">Explore Plan</div>
+                                <Icon.CaretRight weight="bold" className="text-blue text-sm" />
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            }
             {style === 'style-four' &&
                 <div className="service-item p-8 bg-white rounded-lg border border-line hover-box-shadow">
                     <Link

@@ -10,8 +10,8 @@ import FaqsOne from "@/components/Section/FAQs/FaqsOne";
 import FormRequestOne from "@/components/Section/FormRequest/FormRequestOne";
 import blogData from '@/data/blog.json'
 import BlogOne from "@/components/Section/Blog/BlogOne";
-import Footer from "@/components/Footer/Footer";
 import PartnerOne from "@/components/Section/Partner/PartnerOne";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (

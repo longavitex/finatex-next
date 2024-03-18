@@ -102,3 +102,25 @@
         }
     }
 }
+
+.style-three {
+    .footer-block {
+        background-color: #130E38;
+
+        .company-contact {
+            svg {
+                path {
+                    &:nth-child(4) {
+                        fill: var(--gradient);
+                    }
+                }
+            }
+
+            .send-block {
+                button {
+                    background-color: var(--gradient);
+                }
+            }
+        }
+    }
+}

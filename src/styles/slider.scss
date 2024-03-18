@@ -272,6 +272,109 @@
             }
         }
     }
+
+    &.style-three {
+        border-top: 2px solid #505050;
+        overflow: hidden;
+
+        .slider-main {
+            .slider-item {
+                opacity: 1;
+                height: 690px;
+                background-color: var(--dark-purple);
+
+                .main {
+                    padding-top: 120px;
+                    position: relative;
+                    height: 100%;
+
+                    .slider-img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                @media (max-width: 1300px) {
+                    .main {
+                        .heading2 {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 991.99px) {
+                    .main {
+                        padding-top: 60px;
+                        flex-direction: column;
+                    }
+                }
+
+                @media (max-width: 767.99px) {
+                    .main {
+                        flex-wrap: unset;
+                        justify-content: unset;
+                        row-gap: 32px;
+
+                        .left-block,
+                        .right-block {
+                            flex: unset;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+
+                        .count {
+                            justify-content: space-around;
+
+                            .left,
+                            .right {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                display: none;
+            }
+
+            @media (max-width: 1599.99px) {
+                .slider-item {
+                    height: 620px;
+
+                    .main {
+                        height: 620px;
+                        padding-top: 80px;
+                    }
+                }
+            }
+
+            @media (max-width: 991.99px) {
+                .slider-item {
+                    height: 600px;
+
+                    .main {
+                        height: 600px;
+                    }
+                }
+            }
+
+            @media (max-width: 767.99px) {
+                .slider-item {
+                    height: 500px;
+
+                    .main {
+                        height: 500px;
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

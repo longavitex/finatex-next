@@ -3,7 +3,7 @@ import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 const FormRequestOne = () => {
     return (
-        <div className="form-cta-block lg:mt-[100px] sm:mt-16 mt-10">
+        <div className="form-request-block lg:mt-[100px] sm:mt-16 mt-10">
             <div className="container">
                 <div className="heading flex max-xl:flex-col xl:items-center gap-4 justify-between">
                     <div className="heading3">Request a free call back.</div>

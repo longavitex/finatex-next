@@ -1,10 +1,7 @@
-import MenuTwo from "@/components/Header/Menu/MenuTwo";
-import TopNavTwo from "@/components/Header/TopNav/TopNavTwo";
-import AboutTwo from "@/components/Section/About/AboutTwo";
-import CounterTwo from "@/components/Section/Counter/CounterTwo";
-import PartnerOne from "@/components/Section/Partner/PartnerOne";
+import MenuThree from "@/components/Header/Menu/MenuThree";
+import TopNavThree from "@/components/Header/TopNav/TopNavThree";
 import ProjectTwo from "@/components/Section/Project/ProjectTwo";
-import SliderTwo from "@/components/Slider/SliderTwo";
+import SliderThree from "@/components/Slider/SliderThree";
 import serviceData from '@/data/service.json'
 import ServiceTwo from "@/components/Section/Service/ServiceTwo";
 import TestimonialTwo from "@/components/Section/Testimonial/TestimonialTwo";
@@ -13,6 +10,8 @@ import BlogOne from "@/components/Section/Blog/BlogOne";
 import CTA from "@/components/Section/CTA/CTA"
 import Footer from "@/components/Footer/Footer";
 import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo";
+import ServiceThreeFirst from "@/components/Section/Service/ServiceThreeFirst";
+import AboutThree from "@/components/Section/About/AboutThree";
 
 
 export default function HomeTwo() {
@@ -20,14 +19,13 @@ export default function HomeTwo() {
         <>
             <div className="overflow-x-hidden">
                 <header id="header">
-                    <TopNavTwo />
-                    <MenuTwo />
+                    <TopNavThree />
+                    <MenuThree />
                 </header>
                 <main className="content">
-                    <SliderTwo />
-                    <PartnerOne classname='bg-dark-blue' />
-                    <AboutTwo />
-                    <CounterTwo classname='lg:py-10 py-7 border-t border-line' />
+                    <SliderThree />
+                    <ServiceThreeFirst />
+                    <AboutThree />
                     <ProjectTwo />
                     <ServiceTwo data={serviceData} />
                     <TestimonialTwo />
@@ -36,7 +34,7 @@ export default function HomeTwo() {
                     <div className="pb-[100px]"></div>
                     <CTA />
                 </main>
-                <footer id="footer">
+                <footer id="footer" className="style-three">
                     <Footer />
                 </footer>
             </div>

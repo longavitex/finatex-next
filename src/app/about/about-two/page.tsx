@@ -23,7 +23,7 @@ export default function AboutStyleTwo() {
           <BreadcrumbItem link="About Us" img="/images/banner/about1.png" title="About Us" desc="We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy." />
           <AboutTwo />
           <ServiceAboutTwo data={serviceData} />
-          <FormRequestTwo />
+          <FormRequestTwo classname="style-two style-about" bgImg="/images/banner/form-cta-about.png" />
           <OurTeam />
           <Partner />
           <CTA />

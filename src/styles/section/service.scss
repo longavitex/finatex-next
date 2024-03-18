@@ -1,0 +1,11 @@
+.service-block {
+    &.style-three {
+        .service-item-main {
+            i {
+                &::before {
+                    color: var(--gradient);
+                }
+            }
+        }
+    }
+}
