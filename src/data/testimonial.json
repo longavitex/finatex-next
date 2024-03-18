@@ -5,6 +5,8 @@
         "author": "Maverick",        
         "position": "Chariman, Avitex Inc",        
         "img": "/images/member/avatar1.png",
+        "title": "Variety of Styles!",
+        "star": 5,
         "desc": "Working with this agency has been a game-changer for our business. Their team is knowledgeable, responsive, and always goes the extra mile."
     },
     {
@@ -13,6 +15,8 @@
         "author": "Leonardo",        
         "position": "Designer, TechX Corp",        
         "img": "/images/member/avatar2.png",
+        "title": "Congratulation!",
+        "star": 4,
         "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
     },
     {
@@ -21,6 +25,8 @@
         "author": "De Rossi",        
         "position": "CEO, Hivelab Agency",        
         "img": "/images/member/avatar3.png",
+        "title": "Variety of Styles!",
+        "star": 4,
         "desc": "I'm extremely satisfied with your services! Your meticulous financial planning helped me manage my assets efficiently and achieve my financial goals."
     },
     {
@@ -29,6 +35,8 @@
         "author": "Benjamin",        
         "position": "Chariman, Avitex Inc",        
         "img": "/images/member/avatar4.png",
+        "title": "Congratulation!",
+        "star": 5,
         "desc": "I highly value and appreciate your services and the attention to detail you provide in crafting financial plans. Thank you for helping shape my financial future!"
     },
     {
@@ -37,6 +45,8 @@
         "author": "Alexander",        
         "position": "Designer, ThreeS Corp",        
         "img": "/images/member/avatar5.png",
+        "title": "Congratulation!",
+        "star": 5,
         "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
     }
 ]

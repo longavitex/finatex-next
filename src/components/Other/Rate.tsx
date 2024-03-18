@@ -13,7 +13,7 @@ const Rate: React.FC<RateProps> = ({ currentRate, size }) => {
             if (i >= currentRate) {
                 arrOfStar.push(<Icon.Star key={i} size={size} color="#9FA09C" weight="fill" />);
             } else {
-                arrOfStar.push(<Icon.Star key={i} size={size} color="#ECB018" weight="fill" />);
+                arrOfStar.push(<Icon.Star key={i} size={size} color="#FDD33F" weight="fill" />);
             }
         }
     }

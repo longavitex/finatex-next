@@ -4,5 +4,7 @@ export interface TestimonialType {
     author: string,
     position: string,
     img: string,
+    title: string,
+    star: number,
     desc: string
 }

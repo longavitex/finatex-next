@@ -70,9 +70,9 @@ const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
                         as={`/service/service-detail/${data.title.toLowerCase().replace(/ /g, '-')}`}
                     >
                         <i className={`${data.icon} text-black md:text-6xl text-5xl`}></i>
-                        <div className="heading7 hover:text-blue duration-300 mt-6">{data.title}</div>
+                        <div className="heading7 hover:text-success duration-300 mt-6">{data.title}</div>
                         <div className="text-secondary mt-2">{data.desc}</div>
-                        <div className="text-button-sm underline mt-3">Read More</div>
+                        <div className="text-button-sm hover:text-success underline inline-block duration-300 mt-3">Read More</div>
                     </Link>
                 </div>
             }

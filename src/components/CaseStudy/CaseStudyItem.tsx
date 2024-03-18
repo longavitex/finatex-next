@@ -19,11 +19,13 @@ const CaseStudyItem: React.FC<Props> = ({ data, style }) => {
                         as={"/case-studies/detail/" + data.title.toLowerCase().replace(/ /g, '-')}
                     >
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full rounded-xl block" src={data.img} alt="" />
+                            <img className="w-full h-full rounded-xl block duration-700" src={data.img} alt="" />
                         </div>
-                        <div className="infor bg-white rounded-lg px-6 py-4 text-center">
-                            <div className="category text-button-uppercase text-secondary">{data.subTitle}</div>
-                            <div className="heading6 mt-2">{data.title}</div>
+                        <div className="infor px-10 text-center -mt-6 relative z-[1]">
+                            <div className="main-infor bg-white rounded-lg px-6 py-4 box-shadow-sm">
+                                <div className="category text-center text-button-uppercase text-secondary">{data.subTitle}</div>
+                                <div className="heading6 text-center mt-2">{data.title}</div>
+                            </div>
                         </div>
                     </Link>
                 </div>

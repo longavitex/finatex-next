@@ -9,7 +9,7 @@ const AboutThree = () => {
     
     return (
         <div className="style-three">
-            <div className=" layout-item mt-[100px]">
+            <div className=" layout-item lg:mt-[100px] sm:mt-16 mt-10">
                 <div className="container">
                     <div className="flex max-lg:flex-col-reverse gap-y-8">
                         <div className="w-full lg:w-1/2 lg:pr-[40px] flex flex-col justify-center">

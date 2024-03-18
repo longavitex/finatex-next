@@ -2,19 +2,18 @@ import MenuFour from "@/components/Header/Menu/MenuFour";
 import TopNavFour from "@/components/Header/TopNav/TopNavFour";
 import SliderFour from "@/components/Slider/SliderFour";
 import PartnerOne from "@/components/Section/Partner/PartnerOne";
-import ServiceThreeFirst from "@/components/Section/Service/ServiceThreeFirst";
-import AboutThree from "@/components/Section/About/AboutThree";
 import serviceData from '@/data/service.json'
-import ServiceThree from "@/components/Section/Service/ServiceThree";
+import ServiceFour from "@/components/Section/Service/ServiceFour";
+import CounterFour from "@/components/Section/Counter/CounterFour";
 import caseStudyData from '@/data/case-study.json'
-import CaseStudyThree from "@/components/Section/CaseStudy/CaseStudyThree";
+import CaseStudyFour from "@/components/Section/CaseStudy/CaseStudyFour";
 import testimonialData from '@/data/testimonial.json'
+import TestimonialFour from "@/components/Section/Testimonial/TestimonialFour";
 import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo";
 import blogData from '@/data/blog.json'
 import BlogOne from "@/components/Section/Blog/BlogOne";
 import CTA from "@/components/Section/CTA/CTA"
 import Footer from "@/components/Footer/Footer";
-import TestimonialThree from "@/components/Section/Testimonial/TestimonialThree";
 
 
 export default function HomeFour() {
@@ -28,13 +27,12 @@ export default function HomeFour() {
                 <main className="content">
                     <SliderFour />
                     <PartnerOne classname='bg-deep-purple' />
-                    <ServiceThreeFirst />
-                    <AboutThree />
-                    <ServiceThree data={serviceData} />
-                    <CaseStudyThree data={caseStudyData} />
-                    <TestimonialThree data={testimonialData} />
-                    <FormRequestTwo classname="style-two style-three" bgImg="" />
+                    <ServiceFour data={serviceData} />
+                    <CounterFour />
+                    <CaseStudyFour data={caseStudyData} />
+                    <TestimonialFour data={testimonialData} />
                     <BlogOne data={blogData} />
+                    <FormRequestTwo classname="style-two style-three" bgImg="" />
                     <div className="pb-[100px]"></div>
                     <CTA />
                 </main>
