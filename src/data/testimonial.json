@@ -48,5 +48,45 @@
         "title": "Congratulation!",
         "star": 5,
         "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
+    },
+    {
+        "id": 6,
+        "category": "fintech",
+        "author": "De Rossi",        
+        "position": "CEO, Hivelab Agency",        
+        "img": "/images/member/avatar-testimonials6-1.png",
+        "title": "Variety of Styles!",
+        "star": 4,
+        "desc": "I'm extremely satisfied with your services! Your meticulous financial planning helped me manage my assets efficiently and achieve my financial goals."
+    },
+    {
+        "id": 7,
+        "category": "fintech",
+        "author": "Benjamin",        
+        "position": "Chariman, Avitex Inc",        
+        "img": "/images/member/avatar-testimonials6-2.png",
+        "title": "Congratulation!",
+        "star": 5,
+        "desc": "I highly value and appreciate your services and the attention to detail you provide in crafting financial plans. Thank you for helping financial future!"
+    },
+    {
+        "id": 8,
+        "category": "fintech",
+        "author": "Alexander",        
+        "position": "Designer, ThreeS Corp",        
+        "img": "/images/member/avatar-testimonials6-3.png",
+        "title": "Congratulation!",
+        "star": 5,
+        "desc": "Your personalized approach and care have improved my financial planning. I highly value your services and attention to detail in crafting financial plans."
+    },
+    {
+        "id": 9,
+        "category": "fintech",
+        "author": "Christina",        
+        "position": "CEO, Texas Instruments",        
+        "img": "/images/member/avatar-testimonials6-4.png",
+        "title": "Congratulation!",
+        "star": 5,
+        "desc": "I highly value and appreciate your services and the attention to detail you provide in crafting financial plans. Thank you for helping financial future!"
     }
 ]

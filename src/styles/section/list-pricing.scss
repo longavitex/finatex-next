@@ -62,6 +62,20 @@
             }
         }
     }
+
+    &.style-six {
+        .pricing-main {
+            .heading {
+                .switch {
+                    &.enable {
+                        .bg-placehover {
+                            background-color: var(--orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes showList {

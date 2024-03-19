@@ -9,116 +9,127 @@
                 }
             }
         }
-    }
 
-    .blog-item {
-        transition: all ease 0.5s;
-        cursor: pointer;
-
-        .bg-img {
-            img {
-                transition: all ease 0.5s;
-                object-fit: cover;
-            }
-        }
-
-        .heading6,
-        .read {
-            transition: all ease 0.5s;
-        }
-
-        &:hover {
-            .bg-img {
-                img {
-                    transform: scale(1.08);
-                    transition: all ease 0.5s;
-                }
-            }
-
-            .heading6 {
-                color: var(--blue);
-                transition: all ease 0.5s;
-            }
-
-            .read {
-                text-decoration: underline;
-            }
-        }
-
-        @media (max-width: 767.99px) {
-            .body3 {
-                padding-bottom: 6px;
-            }
-        }
-    }
-
-    >.list-nav {
-        .nav-item {
-            cursor: pointer;
-            transition: all ease 0.3s;
-
-            &.active,
-            &:hover {
-                background-color: var(--blue);
-                border: 1px solid var(--blue);
-                color: var(--white);
-            }
-        }
-    }
-
-    .cate-block {
-        .list-nav {
-            .nav-item {
-                svg {
-                    visibility: hidden;
-                }
-
-                &.active,
+        &.style-six {
+            .blog-item {
                 &:hover {
-                    background-color: var(--surface);
-                    color: var(--on-surface);
-
-                    svg {
-                        visibility: visible;
+                    .heading6 {
+                        color: var(--orange);
                     }
                 }
             }
         }
     }
+}
 
-    .recent-post-block {
-        .recent-post-item {
-            .item-img {
-                img {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 12px;
-                    object-fit: cover;
-                }
-            }
+.blog-item {
+    transition: all ease 0.5s;
+    cursor: pointer;
 
-            .item-title {
-                transition: all ease 0.5s;
-            }
-
-            &:hover {
-                .item-title {
-                    color: var(--blue);
-                }
-            }
+    .bg-img {
+        img {
+            transition: all ease 0.5s;
+            object-fit: cover;
         }
     }
 
-    @media (max-width: 991.99px) {
-        .container {
-            >.row {
-                .pl-55 {
-                    padding-left: 15px;
+    .heading6,
+    .read {
+        transition: all ease 0.5s;
+    }
+
+    &:hover {
+        .bg-img {
+            img {
+                transform: scale(1.08);
+                transition: all ease 0.5s;
+            }
+        }
+
+        .heading6 {
+            color: var(--blue);
+            transition: all ease 0.5s;
+        }
+
+        .read {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 767.99px) {
+        .body3 {
+            padding-bottom: 6px;
+        }
+    }
+}
+
+>.list-nav {
+    .nav-item {
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &.active,
+        &:hover {
+            background-color: var(--blue);
+            border: 1px solid var(--blue);
+            color: var(--white);
+        }
+    }
+}
+
+.cate-block {
+    .list-nav {
+        .nav-item {
+            svg {
+                visibility: hidden;
+            }
+
+            &.active,
+            &:hover {
+                background-color: var(--surface);
+                color: var(--on-surface);
+
+                svg {
+                    visibility: visible;
                 }
             }
         }
     }
 }
+
+.recent-post-block {
+    .recent-post-item {
+        .item-img {
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+        }
+
+        .item-title {
+            transition: all ease 0.5s;
+        }
+
+        &:hover {
+            .item-title {
+                color: var(--blue);
+            }
+        }
+    }
+}
+
+@media (max-width: 991.99px) {
+    .container {
+        >.row {
+            .pl-55 {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
 
 .style-masonry {
     .list-blog {

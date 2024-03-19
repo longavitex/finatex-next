@@ -42,6 +42,88 @@
     }
 }
 
+.about-five {
+    .main {
+        >div:last-child {
+            position: relative;
+
+            .bg-img {
+                position: relative;
+                z-index: 1;
+
+                img {
+                    z-index: 1;
+                }
+            }
+
+            .sub-img {
+                img:first-child {
+                    position: absolute;
+                    left: 78px;
+                    bottom: 54px;
+                    width: 126px;
+                    height: 126px;
+                    animation: moveleft 5s ease infinite;
+                }
+
+                img:last-child {
+                    position: absolute;
+                    right: 60px;
+                    bottom: -20px;
+                    width: 208px;
+                    height: 208px;
+                    z-index: 2;
+                    animation: moveright 5s ease infinite;
+                }
+            }
+        }
+
+        @media (max-width:575.99px) {
+            >div:last-child {
+                .sub-img {
+                    img:first-child {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    img:last-child {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-10px, 20px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes moveright {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(10px, -20px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
 @keyframes show {
     from {
         opacity: 0;

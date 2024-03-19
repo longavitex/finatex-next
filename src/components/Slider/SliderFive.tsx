@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 
-const SliderOne = () => {
+const SliderFive = () => {
     return (
         <>
             <section className="slider-block style-one">
@@ -35,7 +35,7 @@ const SliderOne = () => {
                             <div className="slider-item slider-first">
                                 <div className="bg-img">
                                     <Image
-                                        src={'/images/slider/slider1.png'}
+                                        src={'/images/slider/slider5-1.png'}
                                         width={4000}
                                         height={3000}
                                         alt="bgslider"
@@ -44,19 +44,19 @@ const SliderOne = () => {
                                     />
                                 </div>
                                 <div className="container">
-                                    <div className="text-content flex-columns-between">
+                                    <div className="text-content flex flex-col justify-between">
                                         <div className="heading2">
                                             <div className="relative overflow-hidden">
-                                                <span className="block relative overflow-hidden">Simplify and Secure</span>
-                                                <span className="block absolute top-0 left-0 w-full h-full">Simplify and Secure</span>
+                                                <span className="block relative overflow-hidden">Invest the Future of</span>
+                                                <span className="block absolute top-0 left-0 w-full h-full">Invest the Future of</span>
                                             </div>
                                             <div className="relative overflow-hidden">
-                                                <span className="block relative overflow-hidden">Your Payments with</span>
-                                                <span className="block absolute top-0 left-0 w-full h-full">Your Payments with</span>
+                                                <span className="block relative overflow-hidden">Cryptocurrency with</span>
+                                                <span className="block absolute top-0 left-0 w-full h-full">Cryptocurrency with</span>
                                             </div>
                                             <div className="relative overflow-hidden">
-                                                <span className=" text-blue block relative overflow-hidden">Our Solution</span>
-                                                <span className=" text-blue block absolute top-0 left-0 w-full h-full">Our Solution</span>
+                                                <span className=" text-blue block relative overflow-hidden">Confidence</span>
+                                                <span className=" text-blue block absolute top-0 left-0 w-full h-full">Confidence</span>
                                             </div>
                                         </div>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br />opportunities in the rapidly growing world of cryptocurrency.</div>
@@ -70,7 +70,7 @@ const SliderOne = () => {
                             <div className="slider-item slider-second">
                                 <div className="bg-img">
                                     <Image
-                                        src={'/images/slider/slider1-2.png'}
+                                        src={'/images/slider/slider5-2.png'}
                                         width={4000}
                                         height={3000}
                                         alt="bgslider"
@@ -79,19 +79,15 @@ const SliderOne = () => {
                                     />
                                 </div>
                                 <div className="container">
-                                    <div className="text-content flex-columns-between">
+                                    <div className="text-content flex flex-col justify-between">
                                         <div className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Empower Your</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Empower Your</span>
                                             </div>
                                             <div className="relative overflow-hidden">
-                                                <span className="block relative overflow-hidden">Business with</span>
-                                                <span className="block absolute top-0 left-0 w-full h-full">Business with</span>
-                                            </div>
-                                            <div className="relative overflow-hidden">
-                                                <span className=" text-blue block relative overflow-hidden">Seamless Payments</span>
-                                                <span className=" text-blue block absolute top-0 left-0 w-full h-full">Seamless Payments</span>
+                                                <span className=" text-blue block relative overflow-hidden">Financial Future</span>
+                                                <span className=" text-blue block absolute top-0 left-0 w-full h-full">Financial Future</span>
                                             </div>
                                         </div>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br />opportunities in the rapidly growing world of cryptocurrency.</div>
@@ -105,7 +101,7 @@ const SliderOne = () => {
                             <div className="slider-item slider-third">
                                 <div className="bg-img">
                                     <Image
-                                        src={'/images/slider/slider1-1.png'}
+                                        src={'/images/slider/slider5-3.png'}
                                         width={4000}
                                         height={3000}
                                         alt="bgslider"
@@ -114,7 +110,7 @@ const SliderOne = () => {
                                     />
                                 </div>
                                 <div className="container">
-                                    <div className="text-content flex-columns-between">
+                                    <div className="text-content flex flex-col justify-between">
                                         <div className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Powerful Payment</span>
@@ -146,4 +142,4 @@ const SliderOne = () => {
     )
 }
 
-export default SliderOne
+export default SliderFive

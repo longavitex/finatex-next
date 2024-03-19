@@ -415,47 +415,39 @@
     }
 
     &.style-six {
-        .slider-main .slider-item {
-            height: 1080px;
+        .slider-item {
+            opacity: 1;
+            height: calc(100vh - 44px);
+            padding-top: 60px;
 
-            .bg-img {
-                img {
-                    width: 110%;
+            .container {
+                .text-content {
+                    .heading2 {
+                        >div {
+                            span:first-child {
+                                opacity: 0;
+                            }
+
+                            span:last-child {
+                                animation: translateY 1.2s ease;
+                            }
+                        }
+                    }
+
+                    .body2 {
+                        animation: animateY 1.5s ease;
+                    }
+
+                    .button-main {
+                        animation: animateY 1.7s ease;
+                    }
                 }
             }
         }
 
-        .slick-dots {
-            display: none;
-        }
-
-        @media (max-width: 2200.99px) {
+        @media (max-width: 1023.99px) {
             .slider-main .slider-item {
-                height: 920px;
-            }
-        }
-
-        @media (max-width: 1919.99px) {
-            .slider-main .slider-item {
-                height: 820px;
-            }
-        }
-
-        @media (max-width: 1599.99px) {
-            .slider-main .slider-item {
-                height: 700px;
-            }
-        }
-
-        @media (max-width: 1169.99px) {
-            .slider-main .slider-item {
-                height: 640px;
-            }
-        }
-
-        @media (max-width: 575.99px) {
-            .slider-main .slider-item {
-                height: 460px;
+                height: 580px;
 
                 .bg-img {
                     &::before {
@@ -465,9 +457,15 @@
                 }
 
                 .container .text-content {
-                    top: 55%;
                     z-index: 2;
                 }
+            }
+        }
+
+        @media (max-width: 767.99px) {
+            .slider-main .slider-item {
+                height: 540px;
+                padding-top: 80px;
             }
         }
     }

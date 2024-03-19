@@ -35,7 +35,7 @@ const MenuThree = () => {
 
     return (
         <>
-            <header className={`header-menu style-three bg-dark-purple ${fixedHeader ? 'fixed' : ''}`}>
+            <div className={`header-menu style-three bg-dark-purple ${fixedHeader ? 'fixed' : ''}`}>
                 <div className="container flex items-center justify-between h-20">
                     <Link className="menu-left-block" href="/">
                         <Image
@@ -243,7 +243,7 @@ const MenuThree = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </>
     )
 }

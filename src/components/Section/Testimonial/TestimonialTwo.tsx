@@ -13,7 +13,7 @@ const TestimonialTwo = () => {
                         <div className="content w-2/3">
                             <div className="heading3 text-center">Trusted By Professionals</div>
                             <Swiper
-                                spaceBetween={0}
+                                spaceBetween={16}
                                 slidesPerView={1}
                                 loop={true}
                                 pagination={{ clickable: true }}

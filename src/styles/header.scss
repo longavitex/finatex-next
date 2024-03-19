@@ -1,6 +1,10 @@
 #header {
     padding-bottom: 80px;
 
+    &.style-six {
+        padding-bottom: 0;
+    }
+
     .list-social {
         .item {
             transition: all ease 0.3s;
@@ -62,6 +66,26 @@
                         color: var(--gradient);
                     }
                 }
+            }
+        }
+    }
+}
+
+.style-five {
+    .top-nav {
+        background-color: var(--black);
+
+        .select-block {
+            select {
+                background-color: var(--black);
+            }
+        }
+    }
+
+    .icon-call {
+        i {
+            &::before {
+                color: var(--black);
             }
         }
     }
@@ -325,6 +349,66 @@
             i {
                 &::before {
                     color: var(--white);
+                }
+            }
+        }
+    }
+
+    &.style-six {
+        box-shadow: none;
+
+        .header-main {
+            position: relative;
+
+            .main {
+                background: rgba($color: #FFFFFF, $alpha: 0.2);
+                backdrop-filter: blur(29.5px);
+                position: absolute;
+                width: 100%;
+                z-index: 10;
+                top: 21px;
+            }
+        }
+
+        .menu-center-block {
+            .nav-item {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 16px;
+                    left: 0;
+                    bottom: -16px;
+                    background: transparent;
+                }
+
+                &:hover,
+                &.active {
+                    .nav-link {
+                        color: var(--orange);
+                    }
+
+                    .sub-nav {
+                        top: 64px;
+                    }
+                }
+            }
+
+            .sub-nav {
+                top: 64px;
+
+                .sub-nav-item {
+
+                    &:hover,
+                    &.active {
+                        .sub-nav-link {
+                            color: var(--orange);
+
+                            &::before {
+                                background-color: var(--orange);
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -35,7 +35,7 @@ const MenuFour = () => {
 
     return (
         <>
-            <header className={`header-menu style-four bg-black ${fixedHeader ? 'fixed' : ''}`}>
+            <div className={`header-menu style-four bg-black ${fixedHeader ? 'fixed' : ''}`}>
                 <div className="container flex items-center justify-between h-20">
                     <div className="menu-humburger hidden max-lg:block pointer" onClick={() => setOpenMenuMobile(!openMenuMobile)}>
                         <Icon.List className="text-2xl text-white" weight="bold" />
@@ -222,7 +222,7 @@ const MenuFour = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </>
     )
 }

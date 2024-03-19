@@ -11,10 +11,10 @@ interface Props {
     data: Array<TestimonialType>
 }
 
-const TestimonialThree = ({ data }: Props) => {
+const TestimonialFive = ({ data }: Props) => {
     return (
         <>
-            <div className="testimonial-block style-three our-project-block lg:pb-[100px] sm:pb-16 pb-10">
+            <div className="testimonial-block style-three our-project-block lg:pt-[100px] sm:pt-16 pt-10">
                 <div className="container">
                     <div className="heading3 text-center">What People Are Saying</div>
                     <div className="list-testimonial list-project lg:mt-10 mt-7">
@@ -46,7 +46,7 @@ const TestimonialThree = ({ data }: Props) => {
                         >
                             {data.slice(0, 4).map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <TestimonialItem data={item} style='style-three' />
+                                    <TestimonialItem data={item} style='style-five' />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -57,4 +57,4 @@ const TestimonialThree = ({ data }: Props) => {
     )
 }
 
-export default TestimonialThree
+export default TestimonialFive
