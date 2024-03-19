@@ -4,7 +4,7 @@ import TopNavOne from "@/components/Header/TopNav/TopNavOne"
 import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import caseStudyData from '@/data/case-study.json'
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import TestimonialTwo from '@/components/Section/Testimonial/TestimonialTwo'
@@ -204,7 +204,7 @@ export default function CaseStudyDetail({ params: { slug } }: { params: { slug: 
             </div>
           </div>
           <TestimonialTwo />
-          <CTA />
+          <CtaOne />
         </main>
         <footer id="footer">
           <Footer />

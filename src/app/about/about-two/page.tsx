@@ -8,7 +8,7 @@ import serviceData from '@/data/service.json'
 import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo"
 import OurTeam from "@/components/Section/OurTeam/OurTeam"
 import Partner from "@/components/Section/Partner/PartnerAbout"
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function AboutStyleTwo() {
@@ -26,7 +26,7 @@ export default function AboutStyleTwo() {
           <FormRequestTwo classname="style-two style-about" bgImg="/images/banner/form-cta-about.png" />
           <OurTeam />
           <Partner />
-          <CTA />
+          <CtaOne />
         </main>
         <footer id="footer">
           <Footer />

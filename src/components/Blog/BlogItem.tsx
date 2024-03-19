@@ -55,11 +55,11 @@ const BlogItem: React.FC<BlogProps> = ({ data, type }) => {
                             </div>
                             <div className="item-date flex items-center">
                                 <Icon.Chat />
-                                <span className="ml-1 caption2">{data.date}</span>
+                                <span className="ml-1 caption2">19</span>
                             </div>
                             <div className="item-date flex items-center">
                                 <Icon.Eye />
-                                <span className="ml-1 caption2">{data.date}</span>
+                                <span className="ml-1 caption2">130</span>
                             </div>
                         </div>
                         <div className="heading6 mt-2">{data.title}</div>

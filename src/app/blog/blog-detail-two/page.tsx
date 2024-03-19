@@ -5,7 +5,7 @@ import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import LayoutDetailTwo from "@/components/Blog/LayoutDetailTwo"
 import blogData from '@/data/blog.json'
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
@@ -47,7 +47,7 @@ export default function CaseStudyDetail({ params: { slug } }: { params: { slug: 
                         </div>
                     </div>
                     <LayoutDetailTwo data={foundPost} />
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

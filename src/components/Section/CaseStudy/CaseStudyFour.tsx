@@ -16,7 +16,7 @@ const CaseStudyFour = ({ data }: Props) => {
                 <div className="container">
                     <div className="heading flex items-center justify-between gap-5 flex-wrap">
                         <div className="heading3">Case Studies</div>
-                        <Link className="underline hover:text-success duration-300" href="/case-studies/case-studies-one">
+                        <Link className="text-button underline hover:text-success duration-300" href="/case-studies/case-studies-one">
                             View All
                         </Link>
                     </div>

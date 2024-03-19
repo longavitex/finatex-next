@@ -3,7 +3,7 @@ import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import ServiceFilter from "@/components/Section/Service/ServiceFilter"
 import serviceData from '@/data/service.json'
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function ServiceStyleOne({ params: { slug } }: { params: { slug: string } }) {
@@ -139,7 +139,7 @@ export default function ServiceStyleOne({ params: { slug } }: { params: { slug: 
                             </div>
                         </div>
                     </div>
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

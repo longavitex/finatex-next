@@ -4,7 +4,7 @@ import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import ServiceFive from "@/components/Section/Service/ServiceFive"
 import serviceData from '@/data/service.json'
 import Partner from "@/components/Section/Partner/PartnerAbout"
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function ServiceStyleOne() {
@@ -37,7 +37,7 @@ export default function ServiceStyleOne() {
                     </div>
                     <ServiceFive data={serviceData} title="" />
                     <Partner />
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

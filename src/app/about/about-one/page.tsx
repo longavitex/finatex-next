@@ -7,7 +7,7 @@ import ServiceAboutOne from "@/components/Section/Service/ServiceAboutOne"
 import serviceData from '@/data/service.json'
 import OurTeam from "@/components/Section/OurTeam/OurTeam"
 import PartnerAbout from "@/components/Section/Partner/PartnerAbout"
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function AboutStyleOne() {
@@ -25,12 +25,12 @@ export default function AboutStyleOne() {
           <ServiceAboutOne data={serviceData} />
           <OurTeam />
           <PartnerAbout />
-          <CTA />
+          <CtaOne />
         </main>
-      <footer id="footer">
-        <Footer />
-      </footer>
-    </div >
+        <footer id="footer">
+          <Footer />
+        </footer>
+      </div >
     </>
   )
 }

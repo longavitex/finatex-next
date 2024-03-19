@@ -11,7 +11,7 @@ import testimonialData from '@/data/testimonial.json'
 import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo";
 import blogData from '@/data/blog.json'
 import BlogOne from "@/components/Section/Blog/BlogOne";
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer";
 import TestimonialThree from "@/components/Section/Testimonial/TestimonialThree";
 
@@ -34,7 +34,7 @@ export default function HomeThree() {
                     <FormRequestTwo classname="style-two style-three" bgImg="" />
                     <BlogOne data={blogData} />
                     <div className="pb-[100px]"></div>
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer" className="style-three">
                     <Footer />

@@ -15,6 +15,12 @@
         }
     }
 
+    &.style-four {
+        .form {
+            background: rgba($color: #FFFFFF, $alpha: 0.2);
+        }
+    }
+
     &.style-about {
         .form-block {
             background-color: var(--grey);

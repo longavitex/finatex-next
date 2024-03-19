@@ -119,7 +119,7 @@ const MenuFour = () => {
                         </ul>
                     </div>
                     <div className="menu-right-block flex items-center">
-                        <Link href={'/contact/contact-one'} className="button-main bg-success rounded-full mr-5 max-sm:hidden">Get a quote</Link>
+                        <Link href={'/contact/contact-one'} className="button-main bg-success text-white rounded-full mr-5 max-sm:hidden">Get a quote</Link>
                         <div className="icon-call"><i className="icon-phone-call text-4xl"></i></div>
                         <div className="text ml-3">
                             <div className="text-button-sm text-placehover">Call us 24/7</div>

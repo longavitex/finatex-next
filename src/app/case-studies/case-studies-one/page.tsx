@@ -3,7 +3,7 @@ import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import CaseStudyOne from "@/components/CaseStudy/CaseStudyOne"
 import caseStudyData from '@/data/case-study.json'
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function CaseStudyStyleOne() {
@@ -17,7 +17,7 @@ export default function CaseStudyStyleOne() {
                 <main className="content">
                     <BreadcrumbItem link="Case Studies" img="/images/banner/case-studies.png" title="Case Studies" desc="Discover our collection of compelling Case Studies showcasing our successful projects and the positive impact we've made for our clients." />
                     <CaseStudyOne data={caseStudyData} />
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

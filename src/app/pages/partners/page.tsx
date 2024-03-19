@@ -4,7 +4,7 @@ import { useState } from "react"
 import TopNavOne from "@/components/Header/TopNav/TopNavOne"
 import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
@@ -84,7 +84,7 @@ export default function Pricing() {
                             </div>
                         </div>
                     </div>
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

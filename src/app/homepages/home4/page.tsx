@@ -9,10 +9,11 @@ import caseStudyData from '@/data/case-study.json'
 import CaseStudyFour from "@/components/Section/CaseStudy/CaseStudyFour";
 import testimonialData from '@/data/testimonial.json'
 import TestimonialFour from "@/components/Section/Testimonial/TestimonialFour";
-import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo";
+import PricingFour from "@/components/Section/Pricing/PricingFour";
+import CtaFour from "@/components/Section/CTA/CtaFour"
 import blogData from '@/data/blog.json'
-import BlogOne from "@/components/Section/Blog/BlogOne";
-import CTA from "@/components/Section/CTA/CTA"
+import BlogFour from "@/components/Section/Blog/BlogFour";
+import FormRequestFour from "@/components/Section/FormRequest/FormRequestFour";
 import Footer from "@/components/Footer/Footer";
 
 
@@ -31,10 +32,10 @@ export default function HomeFour() {
                     <CounterFour />
                     <CaseStudyFour data={caseStudyData} />
                     <TestimonialFour data={testimonialData} />
-                    <BlogOne data={blogData} />
-                    <FormRequestTwo classname="style-two style-three" bgImg="" />
-                    <div className="pb-[100px]"></div>
-                    <CTA />
+                    <PricingFour />
+                    <CtaFour />
+                    <BlogFour data={blogData} />
+                    <FormRequestFour />
                 </main>
                 <footer id="footer" className="style-three">
                     <Footer />

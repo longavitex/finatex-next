@@ -48,6 +48,20 @@
             }
         }
     }
+
+    &.style-four {
+        .pricing-main {
+            .heading {
+                .switch {
+                    &.enable {
+                        .bg-placehover {
+                            background-color: var(--success);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes showList {

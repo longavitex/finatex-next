@@ -10,7 +10,7 @@ import ServiceTwo from "@/components/Section/Service/ServiceTwo";
 import TestimonialTwo from "@/components/Section/Testimonial/TestimonialTwo";
 import blogData from '@/data/blog.json'
 import BlogOne from "@/components/Section/Blog/BlogOne";
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer";
 import FormRequestTwo from "@/components/Section/FormRequest/FormRequestTwo";
 
@@ -34,7 +34,7 @@ export default function HomeTwo() {
                     <FormRequestTwo classname="style-two" bgImg="/images/banner/form-benefit-two.png" />
                     <BlogOne data={blogData} />
                     <div className="pb-[100px]"></div>
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />

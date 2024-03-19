@@ -3,7 +3,7 @@ import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import ServiceFilter from "@/components/Section/Service/ServiceFilter"
 import serviceData from '@/data/service.json'
-import CTA from "@/components/Section/CTA/CTA"
+import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 
 export default function ServiceStyleTwo() {
@@ -14,10 +14,10 @@ export default function ServiceStyleTwo() {
                     <TopNavOne />
                     <MenuOne />
                 </header>
-                <main  className="content">
+                <main className="content">
                     <BreadcrumbItem link="Our Services" img="/images/banner/about1.png" title="Our Services" desc="Expand your knowledge and skills in cryptocurrency trading through our educational resources." />
                     <ServiceFilter data={serviceData} />
-                    <CTA />
+                    <CtaOne />
                 </main>
                 <footer id="footer">
                     <Footer />
