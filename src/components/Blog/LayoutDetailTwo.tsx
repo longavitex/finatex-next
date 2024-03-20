@@ -29,7 +29,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
                 <div className="bg-img"><img className="w-full rounded-2xl" src={data?.img || "/images/blog/item3.png"} alt="img" /></div>
               </div>
               <div className="paragraph-content mt-8">
-                <div className="body2 text-secondary">Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.</div>
+                <div className="body2 text-secondary">{`Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.`}</div>
                 <div className="review pl-4 py-2 border-l-2 border-line mt-4">
                   <div className="body2 italic">“ Seize control of your financial future and unleash your potential for success. Our expert guidance will empower you to navigate the intricacies of financial management. From budgeting and saving to investing and debt management, we provide the tools and knowledge you need to achieve your goals.”.</div>
                   <li className="text-xs uppercase font-bold mt-4">Tony Nguyen, CEO of Avitex</li>
@@ -47,7 +47,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
               </div>
               <div className="paragraph-content mt-8">
                 <div className="heading6">How to Saving Finacial</div>
-                <div className="body2 text-secondary mt-4">Let us help you navigate the complexities of the financial world, maximize your earnings, and turn your creative passion into a lucrative venture. It's time to unleash your full potential and embark on a journey towards financial prosperity.</div>
+                <div className="body2 text-secondary mt-4">{`Let us help you navigate the complexities of the financial world, maximize your earnings, and turn your creative passion into a lucrative venture. It's time to unleash your full potential and embark on a journey towards financial prosperity.`}</div>
                 <div className="list-feature mt-8">
                   <div className="grid lg:grid-cols-2 gap-y-3">
                     <div className="w-full gap-y-3 flex flex-col">
@@ -87,7 +87,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
                   <li className="body3 text-secondary mt-2">Experience with database systems and database internals, such as query engines and optimizers are a big plus. </li>
                   <li className="body3 text-secondary mt-2">Strong fundamentals in computer science skills.</li>
                 </div>
-                <div className="end mt-5 body2 text-secondary">Saving money is an essential skill for financial stability and long-term success. We understand the importance of efficient resource management, and we're here to guide you through proven strategies to optimize your financial savings. Our experts will provide you with practical tips and insights, such as budgeting techniques, expense tracking, smart investment options, and ways to reduce unnecessary expenses.</div>
+                <div className="end mt-5 body2 text-secondary">{`Saving money is an essential skill for financial stability and long-term success. We understand the importance of efficient resource management, and we're here to guide you through proven strategies to optimize your financial savings. Our experts will provide you with practical tips and insights, such as budgeting techniques, expense tracking, smart investment options, and ways to reduce unnecessary expenses.`}</div>
               </div>
             </div>
             <div className="blog-more-infor mt-8">
