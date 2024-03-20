@@ -62,9 +62,9 @@ const TestimonialItem: React.FC<Props> = ({ data, style }) => {
                 </div>
             }
             {style === 'style-six' &&
-                <div className="item flex">
-                    <div className="md:w-7/12">
-                        <div className="comment-item style-six rounded-2xl block">
+                <div className="item flex max-sm:flex-col-reverse">
+                    <div className="sm:w-7/12">
+                        <div className="comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block">
                             <div className="flex flex-col justify-between h-full">
                                 <div className="icon mb-4">
                                     <i className="icon-quotes text-6xl"></i>
@@ -78,8 +78,8 @@ const TestimonialItem: React.FC<Props> = ({ data, style }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:w-5/12">
-                        <Image width={5000} height={4000} className="w-full h-full" src={data.img} alt="" />
+                    <div className="sm:w-5/12">
+                        <Image width={5000} height={4000} className="w-full h-full object-cover" src={data.img} alt="" />
                     </div>
                 </div>
             }

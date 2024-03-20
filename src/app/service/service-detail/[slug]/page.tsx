@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from "react"
 import TopNavOne from "@/components/Header/TopNav/TopNavOne"
 import MenuOne from "@/components/Header/Menu/MenuOne"
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
@@ -5,11 +8,19 @@ import ServiceFilter from "@/components/Section/Service/ServiceFilter"
 import serviceData from '@/data/service.json'
 import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
+import * as Icon from "@phosphor-icons/react/dist/ssr";
+import faqData from '@/data/faqs.json'
 
 export default function ServiceStyleOne({ params: { slug } }: { params: { slug: string } }) {
     const foundPost = serviceData.find(item => {
         return item.title.toLowerCase().replace(/ /g, '-') === slug
     })
+
+    const [faq, setFaq] = useState<number | null>(1)
+
+    const handleFaq = (id: number) => {
+        setFaq(prevId => prevId === id ? null : id)
+    }
 
     return (
         <>
@@ -22,70 +33,67 @@ export default function ServiceStyleOne({ params: { slug } }: { params: { slug: 
                     <BreadcrumbItem link="Our Services" img="/images/banner/about1.png" title={foundPost?.title || 'Our Services'} desc={foundPost?.desc || "Expand your knowledge and skills in cryptocurrency trading through our educational resources."} />
                     <div className="content-detail-block lg:py-[100px] sm:py-16 py-10">
                         <div className="container">
-                            <div className="flex">
-                                <div className="col-12 xl:w-3/4">
-                                    <div className="content-para pr-[80px]">
+                            <div className="flex max-xl:flex-col gap-y-8">
+                                <div className="w-full xl:w-3/4">
+                                    <div className="content-para xl:pr-[80px]">
                                         <div className="heading3">Portfolio Management for Financial Growth</div>
                                         <div className="body2 text-secondary mt-4">Our objective for this project was to develop a comprehensive financial management platform that provided users with a centralized dashboard for managing their finances. We wanted to create a platform that was user-friendly, easy to navigate, and offered a range of features to help users track their spending, monitor their investments, and plan for their financial future. Our goal was to provide users with the tools and resources they need to make informed financial decisions and achieve their financial goals.</div>
                                         <div className="bg-img mt-8 mb-8"><img className="w-full h-full rounded-xl" src="/images/component/gateway1.png" alt="" /></div>
                                         <div className="heading6">We offer diverse business solutions.</div>
-                                        <div className="body2 text-secondary mt-16">At our company, we offer a comprehensive suite of business services tailored to meet our clients unique needs and goals. Our services range from financial planning and accounting to marketing and brand management, delivered with exceptional value and expertise across various industries and business types. Our customized approach ensures that our solutions fit your specific objectives, whether you're a small startup or a large multinational corporation.</div>
+                                        <div className="body2 text-secondary mt-4">{`At our company, we offer a comprehensive suite of business services tailored to meet our clients unique needs and goals. Our services range from financial planning and accounting to marketing and brand management, delivered with exceptional value and expertise across various industries and business types. Our customized approach ensures that our solutions fit your specific objectives, whether you're a small startup or a large multinational corporation.`}</div>
                                         <div className="list-feature mt-8">
-                                            <div className="flex gap-y-3">
-                                                <div className="w-full lg:w-1/2 gap-y-3 flex-col">
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                            <div className="flex max-lg:flex-col gap-y-3">
+                                                <div className="w-full lg:w-1/2 gap-y-3 flex flex-col">
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Identification of monthly income</div>
                                                     </div>
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Creation of savings and investment plan</div>
                                                     </div>
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Management and calculation of monthly expenses</div>
                                                     </div>
                                                 </div>
-                                                <div className="w-full lg:w-1/2 gap-y-3 flex-col">
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                                <div className="w-full lg:w-1/2 gap-y-3 flex flex-col">
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Research and Analysis</div>
                                                     </div>
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Investment Management and Investment Advice</div>
                                                     </div>
-                                                    <div className="item flex items-center gap-4"> <i className="ph-fill ph-check-circle fs-20 text-blue"></i>
+                                                    <div className="item flex items-center gap-4">
+                                                        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
                                                         <div className="text-button">Education and Resources</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="list-question mt-[60px]">
+                                        <div className="list-question lg:mt-[60px] mt-8">
                                             <div className="heading6">Questions about service</div>
-                                            <div className=" question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line">
-                                                <div className="question-item-main flex-between py-4 heading7">When is the last time you can remember feeling ?<i className="ph-bold ph-plus fs-5 p-8"></i></div>
-                                                <div className="content-question">
-                                                    <div className="border-line"></div>
-                                                    <div className="body3 text-secondary py-4">When is the last time you can remember feeling.</div>
+                                            {faqData.slice(0, 4).map(item => (
+                                                <div
+                                                    key={item.id}
+                                                    className={`question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ${faq === item.id ? 'open' : ''}`}
+                                                    onClick={() => handleFaq(item.id)}
+                                                >
+                                                    <div className="question-item-main flex items-center justify-between py-4 heading7">{item.title}
+                                                        {faq === item.id ? (
+                                                            <Icon.Minus weight="bold" className="text-xl" />
+                                                        ) : (
+                                                            <Icon.Plus weight="bold" className="text-xl" />
+                                                        )}
+                                                    </div>
+                                                    <div className="content-question">
+                                                        <div className="border-line w-full"></div>
+                                                        <div className="body3 text-secondary pb-4">{item.desc}</div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className=" question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line">
-                                                <div className="question-item-main flex-between py-4 heading7">Which of the Seven Wonders of the world do you?<i className="ph-bold ph-plus fs-5 p-8"></i></div>
-                                                <div className="content-question">
-                                                    <div className="border-line"></div>
-                                                    <div className="body3 text-secondary py-4">When is the last time you can remember feeling.</div>
-                                                </div>
-                                            </div>
-                                            <div className=" question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line">
-                                                <div className="question-item-main flex-between py-4 heading7">If you could change careers right this second<i className="ph-bold ph-plus fs-5 p-8"></i></div>
-                                                <div className="content-question">
-                                                    <div className="border-line"></div>
-                                                    <div className="body3 text-secondary py-4">When is the last time you can remember feeling.</div>
-                                                </div>
-                                            </div>
-                                            <div className=" question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line">
-                                                <div className="question-item-main flex-between py-4 heading7">What makes you happiest?<i className="ph-bold ph-plus fs-5 p-8"></i></div>
-                                                <div className="content-question">
-                                                    <div className="border-line"></div>
-                                                    <div className="body3 text-secondary py-4">When is the last time you can remember feeling.</div>
-                                                </div>
-                                            </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>

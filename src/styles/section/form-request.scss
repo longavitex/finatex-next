@@ -21,6 +21,13 @@
         }
     }
 
+    &.style-six {
+        .form-block {
+            background: rgba($color: #FFFFFF, $alpha: 0.1);
+            backdrop-filter: blur(20px);
+        }
+    }
+
     &.style-about {
         .form-block {
             background-color: var(--grey);

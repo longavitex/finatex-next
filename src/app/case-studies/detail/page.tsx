@@ -26,7 +26,7 @@ export default function CaseStudyDetail() {
           />
           <div className="project-infor lg:mt-[100px] sm:mt-16 mt-10">
             <div className="container">
-              <div className="flex justify-between items-start gap-y-8">
+              <div className="flex max-lg:flex-col justify-between items-start gap-y-8">
                 <div className="w-full lg:w-7/12">
                   <div className="heading3">
                     E-Commerce Platform Development
@@ -104,8 +104,8 @@ export default function CaseStudyDetail() {
           </div>
           <div className="how-we-did lg:mt-[100px] sm:mt-16 mt-10">
             <div className="container">
-              <div className="flex gap-y-8">
-                <div className="w-full lg:w-1/2 pr-10 bg-video">
+              <div className="flex max-lg:flex-col gap-y-8">
+                <div className="w-full lg:w-1/2 lg:pr-10 bg-video">
                   <div className="bg-img h-full w-full">
                     <img
                       className="w-full block rounded-2xl"
@@ -115,7 +115,7 @@ export default function CaseStudyDetail() {
                   </div>
                 </div>
                 <div className="w-full lg:w-1/2 flex items-center justify-center">
-                  <div className="desc pl-10 pr-3">
+                  <div className="desc lg:pl-10 lg:pr-3">
                     <div className="heading3">How We Did It</div>
                     <div className="body3 text-secondary md:mt-10 mt-6">
                       We began by conducting extensive market research to
@@ -162,8 +162,8 @@ export default function CaseStudyDetail() {
           </div>
           <div className=" layout-item lg:mt-[100px] sm:mt-16 mt-10">
             <div className="container">
-              <div className="flex items-center gap-y-8">
-                <div className="w-full lg:w-1/2 pr-[40px] flex flex-col justify-center">
+              <div className="flex max-lg:flex-col items-center gap-y-8">
+                <div className="w-full lg:w-1/2 lg:pr-[40px] flex flex-col justify-center">
                   <div className="heading3">Final outcome of this project</div>
                   <div className="body2 text-secondary mt-5">
                     Online banking allows you to manage your finances from
@@ -184,7 +184,7 @@ export default function CaseStudyDetail() {
                     </Link>
                   </div>
                 </div>
-                <div className="w-full lg:w-1/2 pl-[55px]">
+                <div className="w-full lg:w-1/2 lg:pl-[55px]">
                   <div className="bg-img w-full overflow-hidden rounded-2xl">
                     <img
                       className="w-full h-full hover-scale block"

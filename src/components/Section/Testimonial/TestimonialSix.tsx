@@ -86,14 +86,14 @@ const TestimonialSix = ({ data }: Props) => {
                         className='h-full relative'
                         breakpoints={{
                             640: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
+                                slidesPerView: 1,
+                                spaceBetween: 16,
                             },
                             768: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
+                                slidesPerView: 1,
+                                spaceBetween: 16,
                             },
-                            1024: {
+                            1280: {
                                 slidesPerView: 1,
                                 spaceBetween: 100,
                             }

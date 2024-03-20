@@ -15,7 +15,7 @@ const BlogItem: React.FC<BlogProps> = ({ data, type }) => {
         <>
             {type === 'list-one' && (
                 <Link
-                    className="blog-item flex items-center gap-7 gap-y-5"
+                    className="blog-item flex max-md:flex-col md:items-center gap-7 gap-y-5"
                     href={"/blog/blog-detail-one/[slug]"}
                     as={"/blog/blog-detail-one/" + data.title.toLowerCase().replace(/ /g, '-')}
                 >

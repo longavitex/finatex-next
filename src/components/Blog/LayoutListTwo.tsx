@@ -74,8 +74,8 @@ const LayoutListTwo = () => {
   return (
     <div className='list-blog lg:py-[100px] sm:py-16 py-10'>
       <div className="container">
-        <div className="flex gap-y-10">
-          <div className="w-12 lg:w-2/3">
+        <div className="flex max-lg:flex-col gap-y-10">
+          <div className="w-full lg:w-2/3">
             <div className="list flex flex-col gap-y-10">
               {currentBlogs.map(item => (
                 item.id === -1 ? (
@@ -91,7 +91,7 @@ const LayoutListTwo = () => {
               </div>
             )}
           </div>
-          <div className="w-12 lg:w-1/3 pl-[55px]">
+          <div className="w-full lg:w-1/3 lg:pl-[55px]">
             <div className="search-block rounded-lg bg-surface h-[50px] relative">
               <input className="rounded-lg bg-surface w-full h-full pl-4 pr-12" type="text" placeholder="Search" />
               <Icon.MagnifyingGlass className='absolute top-1/2 -translate-y-1/2 right-4 text-xl cursor-pointer' />

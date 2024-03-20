@@ -40,8 +40,8 @@ export default function Pricing() {
                                         <div className={`body3 ${switchBtn ? 'text-black' : 'text-placehover'}`}>Pay Yearly</div>
                                     </div>
                                 </div>
-                                <div className={`list-pricing ${!switchBtn ? 'show' : 'hide'} mt-[60px]`}>
-                                    <div className="flex gap-8">
+                                <div className={`list-pricing ${!switchBtn ? 'show' : 'hide'} lg:mt-[60px] mt-8`}>
+                                    <div className="flex max-lg:flex-col gap-8">
                                         <div className="w-full lg:w-1/3">
                                             <div className="pricing-item py-9 px-6 rounded-xl box-shadow">
                                                 <div className="heading6">Freebie</div>
@@ -136,8 +136,8 @@ export default function Pricing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`list-pricing-year ${switchBtn ? 'show' : 'hide'} mt-[60px]`}>
-                                    <div className="flex gap-8">
+                                <div className={`list-pricing-year ${switchBtn ? 'show' : 'hide'} lg:mt-[60px] mt-8`}>
+                                    <div className="flex max-lg:flex-col gap-8">
                                         <div className="w-full lg:w-1/3">
                                             <div className="pricing-item py-9 px-6 rounded-xl box-shadow">
                                                 <div className="heading6">Freebie</div>

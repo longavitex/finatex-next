@@ -1,4 +1,6 @@
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -6,9 +8,10 @@ const Footer = () => {
         <div className="style-one">
             <div className="footer-block bg-dark pt-[60px]">
                 <div className="container">
-                    <div className="flex flex-between pb-10">
-                        <div className="w-1/4">
-                            <div className="footer-company-infor flex flex-col justify-between gap-5"><img className="footer-logo" src="/images/Logo-footer.svg" alt="Logo" />
+                    <div className="flex max-lg:flex-col max-lg:items-start gap-y-10 pb-10">
+                        <div className="lg:w-1/4">
+                            <div className="footer-company-infor flex flex-col justify-between gap-5">
+                                <Image width={4000} height={3000} className="footer-logo w-[145px]" src="/images/Logo-footer.svg" alt="Logo" />
                                 <div className="text caption1 text-white">We are a diversified company specialized in providing comprehensive financial solutions for individuals and businesses.</div>
                                 <div className="list-social flex items-center gap-2.5 style-one">
                                     <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.facebook.com/" target="_blank">
@@ -29,38 +32,38 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="lg:w-1/2">
                             <div className="footer-navigate flex items-center justify-center gap-20">
                                 <div className="footer-nav-item">
                                     <div className="item-heading text-button-sm text-white">Quick Links</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="about-one.html">About us</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="service-one.html">Services</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="case-studies-one.html">Case Studies</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="contact-two.html">Contact</a></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/about/about-one">About us</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/service/service-one">Services</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/case-studies/case-studies-one">Case Studies</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/contact/contact-two">Contact</Link></li>
                                     </ul>
                                 </div>
-                                <div className="footer-nav-item">
+                                <div className="footer-nav-item max-sm:hidden">
                                     <div className="item-heading text-button-sm text-white">Pages</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="faqs.html">FAQs</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="pricing.html">Pricing</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="partners.html">Partners</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="contact-two.html">Support Center</a></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/faqs">FAQs</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/pricing">Pricing</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/partners">Partners</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/contact/contact-two">Support Center</Link></li>
                                     </ul>
                                 </div>
                                 <div className="footer-nav-item">
                                     <div className="item-heading text-button-sm text-white">Blog</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-list-one.html">Blog List</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-grid.html">Blog Grid</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-masonry.html">Masonry</a></li>
-                                        <li className="mt-3"><a className="caption1 text-surface hover-underline" href="blog-detail-one.html">Blog Detail</a></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-list-one">Blog List</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-grid">Blog Grid</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-masonry">Masonry</Link></li>
+                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-detail-one">Blog Detail</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/4">
+                        <div className="lg:w-1/4">
                             <div className="company-contact">
                                 <div className="heading text-button-sm text-white">Newsletter</div>
                                 <div className="mt-3 flex items-center">

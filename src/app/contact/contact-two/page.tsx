@@ -21,7 +21,7 @@ export default function ContactStyleTwo() {
             desc="Explore our Contact Us page for prompt assistance from our dedicated team."
           />
           <div className="form-contact style-one lg:py-[100px] sm:py-16 py-10">
-            <div className="container flex items-center justify-between">
+            <div className="container flex max-xl:flex-col xl:items-center justify-between gap-y-8">
               <div className="w-full xl:w-1/2">
                 <div className="">
                   <div className="text-button-uppercase text-blue">
@@ -65,7 +65,7 @@ export default function ContactStyleTwo() {
                       </div>
                     </div>
                   </div>
-                  <div className="list-social flex items-center gap-3 mt-8">
+                  <div className="list-social flex items-center flex-wrap gap-3 mt-8">
                     <a
                       className="item rounded-full w-12 h-12 flex items-center justify-center bg-surface"
                       href="https://www.facebook.com/"
@@ -104,10 +104,10 @@ export default function ContactStyleTwo() {
                   </div>
                 </div>
               </div>
-              <div className="w-full xl:w-5/12 bg-white p-10 rounded-2xl box-shadow">
+              <div className="w-full xl:w-5/12 bg-white sm:p-10 p-8 rounded-2xl box-shadow">
                 <form className="form-block flex flex-col justify-between gap-5">
                   <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="w-full">
+                    <div className="w-full max-sm:col-span-2">
                       <input
                         className="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
                         type="text"
@@ -115,7 +115,7 @@ export default function ContactStyleTwo() {
                         required
                       />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full max-sm:col-span-2">
                       <input
                         className="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
                         type="text"

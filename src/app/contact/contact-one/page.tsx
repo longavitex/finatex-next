@@ -13,7 +13,7 @@ export default function ContactStyleOne() {
           <TopNavOne />
           <MenuOne />
         </header>
-        <main  className="content">
+        <main className="content">
           <BreadcrumbItem
             link="Contact us"
             img="/images/banner/case-studies.png"
@@ -22,7 +22,7 @@ export default function ContactStyleOne() {
           />
           <div className="form-contact style-one lg:py-[100px] sm:py-16 py-10">
             <div className="container flex items-center justify-center">
-              <div className="w-5/6 flex items-center gap-y-8">
+              <div className="xm:w-5/6 w-full flex max-xl:flex-col xl:items-center gap-y-8">
                 <div className="w-full xl:w-2/5">
                   <div className="infor bg-blue rounded-xl p-10">
                     <div className="heading5 text-white">Get it touch</div>
@@ -30,7 +30,7 @@ export default function ContactStyleOne() {
                       We will get back to you within 24 hours, or call us
                       everyday
                     </div>
-                    <div className="list-social flex items-center gap-3 md:mt-10 mt-6">
+                    <div className="list-social flex flex-wrap items-center gap-3 md:mt-10 mt-6">
                       <a
                         className="item rounded-full w-12 h-12 flex items-center justify-center bg-surface"
                         href="https://www.facebook.com/"
@@ -119,7 +119,7 @@ export default function ContactStyleOne() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full xl:w-3/5 pl-20">
+                <div className="w-full xl:w-3/5 xl:pl-20">
                   <form className="form-block flex flex-col justify-between gap-5">
                     <div className="heading">
                       <div className="heading5">Request a quote</div>
@@ -128,7 +128,7 @@ export default function ContactStyleOne() {
                         everyday
                       </div>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-5 md:mt-10 mt-6">
+                    <div className="grid sm:grid-cols-2 gap-5 md:mt-10 mt-5">
                       <div className="w-full">
                         <input
                           className="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"

@@ -1,4 +1,8 @@
+'use client'
+
 import React from 'react'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import ServiceItem from '../../Service/ServiceItem'
 import { ServiceType } from '@/type/ServiceType'
 
@@ -7,12 +11,22 @@ interface Props {
 }
 
 const ServiceOne: React.FC<Props> = ({ data }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <>
-            <section className="service-block lg:mt-[100px] sm:mt-16 mt-10">
+            <section className="service-block lg:mt-[100px] sm:mt-16 mt-10" ref={ref}>
                 <div className="container">
                     <div className="heading3 text-center">Our Services</div>
-                    <div className="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-8 md:mt-10 mt-6 gap-y-10">
+                    <div
+                        className="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-8 md:mt-10 mt-6 gap-y-10"
+                        style={{
+                            transform: isInView ? "none" : "translateY(200px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                        }}
+                    >
                         {data.slice(0, 6).map((item, index) => (
                             <ServiceItem data={item} style='style-one' number={index} key={index} />
                         ))}

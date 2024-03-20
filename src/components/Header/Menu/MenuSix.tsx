@@ -136,8 +136,11 @@ const MenuSix = () => {
                     </div>
                 </div>
                 <div id="menu-mobile-block" className={`${openMenuMobile && 'open'}`}>
-                    <div className="menu-mobile-main">
+                    <div className="menu-mobile-main text-white">
                         <div className="container">
+                            <div className="close-btn py-5 flex items-center justify-end">
+                                <Icon.X weight="bold" className="text-white text-2xl" onClick={() => setOpenMenuMobile(false)} />
+                            </div>
                             <ul className="menu-nav-mobile h-full pt-1 pb-1">
                                 <li className={`nav-item-mobile h-full flex-column gap-2 pt-2 pb-2 pl-3 pr-3 pointer home ${openSubNavMobile === 1 ? 'active' : ''}`}
                                     onClick={() => handleOpenSubNavMobile(1)}

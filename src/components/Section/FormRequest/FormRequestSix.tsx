@@ -7,21 +7,21 @@ interface Props {
     classname: string
 }
 
-const FormRequestTwo: React.FC<Props> = ({ bgImg, classname }) => {
+const FormRequestSix: React.FC<Props> = ({ bgImg, classname }) => {
     return (
         <div
             className={`form-request-block ${classname} relative`}
-            style={bgImg ? { backgroundImage: `url('${bgImg}')` } : { backgroundColor: `var(--surface)` }}
+            style={bgImg ? { backgroundImage: `url('${bgImg}')` } : {backgroundColor: `var(--surface)`}}
         >
             <div className="container h-full py-[60px]">
                 <div className="flex max-lg:flex-col lg:items-center justify-between gap-8 h-full">
                     <div className="lg:w-1/2">
                         <div className="heading2 text-white">Let’s build<br />future together</div>
-                        <div className="caption1 text-surface mt-4">Job Searching Just Got Easy. Use Jobtex to run a hiring site and earn<br className="max-sm:hidden" />money in the process!</div>
+                        <div className="caption1 text-surface mt-4">Job Searching Just Got Easy. Use Jobtex to run a hiring site and earn<br />money in the process!</div>
                     </div>
                     <div className="lg:w-1/2">
                         <form className="form-block rounded-xl bg-white p-7 flex flex-col justify-between gap-5">
-                            <div className="heading6">Need Help?</div>
+                            <div className="heading6 text-white">Need Help?</div>
                             <div className="grid sm:grid-cols-2 gap-5">
                                 <div className="max-sm:col-span-2">
                                     <input className="w-full bg-surface caption1 px-4 py-3 rounded-lg" type="text" placeholder="Name" required />
@@ -42,7 +42,7 @@ const FormRequestTwo: React.FC<Props> = ({ bgImg, classname }) => {
                                 </div>
                             </div>
                             <div className="button-block">
-                                <button className="button-main bg-blue text-white text-button">Send Message</button>
+                                <button className="button-main bg-orange text-white hover:bg-white hover:text-black text-button rounded-full">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -51,4 +51,4 @@ const FormRequestTwo: React.FC<Props> = ({ bgImg, classname }) => {
         </div>
     )
 }
-export default FormRequestTwo
+export default FormRequestSix

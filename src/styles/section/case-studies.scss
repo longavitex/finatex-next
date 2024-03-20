@@ -214,3 +214,15 @@
         }
     }
 }
+
+.menu-tab {
+    .tab-item {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 767.98px) {
+        max-width: max-content;
+        width: 100%;
+        overflow-x: auto;
+    }
+}

@@ -412,6 +412,18 @@
                 }
             }
         }
+
+        #menu-mobile-block {
+            border-color: var(--placehover);
+
+            .menu-mobile-main {
+                background-color: var(--black);
+            }
+
+            &.open {
+                height: calc(100vh - 44px);
+            }
+        }
     }
 }
 

@@ -13,6 +13,7 @@ import TestimonialSix from "@/components/Section/Testimonial/TestimonialSix";
 import blogData from '@/data/blog.json'
 import BlogSix from "@/components/Section/Blog/BlogSix";
 import Footer from "@/components/Footer/Footer";
+import FormRequestSix from "@/components/Section/FormRequest/FormRequestSix";
 
 export default function HomeSix() {
   return (
@@ -32,6 +33,7 @@ export default function HomeSix() {
           <ServiceSixSecond />
           <TestimonialSix data={testimonialData} />
           <BlogSix data={blogData} />
+          <FormRequestSix bgImg="/images/cta/bg-cta6.png" classname="style-two style-six" />
         </main>
         <footer id="footer" className="style-six">
           <Footer />

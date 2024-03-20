@@ -15,8 +15,8 @@ const AboutTwo = () => {
   return (
     <div className="about-block lg:py-[100px] sm:py-16 py-10 bg-white">
       <div className="container">
-        <div className="row flex items-center">
-          <div className="w-full xl:w-1/2">
+        <div className="row flex max-lg:flex-col lg:items-center gap-y-6">
+          <div className="w-full lg:w-1/2">
             <div className="bg-img w-full overflow-hidden rounded-3xl">
               <Image
                 src="/images/component/assessment.png"
@@ -27,7 +27,7 @@ const AboutTwo = () => {
               />
             </div>
           </div>
-          <div className="w-full xl:w-1/2 flex-col pl-20">
+          <div className="w-full lg:w-1/2 flex-col lg:pl-20">
             <div className="heading3">Financial assessment</div>
             <div className="nav-infor mt-8">
               <div className="list-nav flex items-center gap-10 border-b border-line w-fit">

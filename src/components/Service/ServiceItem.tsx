@@ -1,4 +1,8 @@
-import React from "react"
+'use client'
+
+import React from 'react'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import Link from "next/link"
 import { ServiceType } from "@/type/ServiceType"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
@@ -10,10 +14,15 @@ interface Props {
 }
 
 const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <>
             {style === 'style-one' &&
-                <div className="service-item p-8 bg-white rounded-lg border border-line hover-box-shadow">
+                <div
+                    className="service-item p-8 bg-white rounded-lg border border-line hover-box-shadow"
+                >
                     <Link
                         className="service-item-main h-full"
                         href={"/service/service-detail/[slug]"}
