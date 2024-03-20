@@ -7,6 +7,7 @@ import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image"
 
 export default function Pricing() {
     const [switchBtn, setSwitchBtn] = useState(false)
@@ -30,55 +31,55 @@ export default function Pricing() {
                             <div className="list-partner mt-6">
                                 <div className="flex flex-col justify-between gap-y-10 pt-[60px]">
                                     <div className="item-main flex items-center justify-between">
-                                        <div className="bg-img"> <img src="/images/partner/1.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/2.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/3.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/4.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/1.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/2.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/3.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/4.svg" alt="1" /></div>
                                     </div>
                                     <div className="border border-line"></div>
                                     <div className="item-main flex items-center justify-between">
-                                        <div className="bg-img"> <img src="/images/partner/5.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/6.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/1.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/8.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/5.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/6.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/1.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/8.svg" alt="1" /></div>
                                     </div>
                                     <div className="border border-line"></div>
                                     <div className="item-main flex items-center justify-between">
-                                        <div className="bg-img"> <img src="/images/partner/9.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/3.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/8.svg" alt="1" /></div>
-                                        <div className="bg-img"> <img src="/images/partner/7.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/9.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/3.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/8.svg" alt="1" /></div>
+                                        <div className="bg-img"> <Image width={4000} height={4000} className="w-full" src="/images/partner/7.svg" alt="1" /></div>
                                     </div>
                                 </div>
                             </div>
                             <div className="more-list flex flex-col gap-y-8 lg:mt-[100px] sm:mt-16 mt-10">
                                 <div className="list grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/1.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/1.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/2.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/2.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/3.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/3.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/4.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/4.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/5.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/5.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/6.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/6.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/7.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/7.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/8.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/8.svg" alt="1" /></div>
                                     </div>
                                     <div className="w-full">
-                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><img src="/images/partner/9.svg" alt="1" /></div>
+                                        <div className="bg-img w-full flex items-center justify-center rounded-2xl border border-line"><Image width={4000} height={4000} className="w-full" src="/images/partner/9.svg" alt="1" /></div>
                                     </div>
                                 </div>
                             </div>

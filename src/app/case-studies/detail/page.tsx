@@ -107,7 +107,8 @@ export default function CaseStudyDetail() {
               <div className="flex max-lg:flex-col gap-y-8">
                 <div className="w-full lg:w-1/2 lg:pr-10 bg-video">
                   <div className="bg-img h-full w-full">
-                    <img
+                    <Image
+                      width={4000} height={4000}
                       className="w-full block rounded-2xl"
                       src="/images/blog/item1.png"
                       alt=""
@@ -186,7 +187,8 @@ export default function CaseStudyDetail() {
                 </div>
                 <div className="w-full lg:w-1/2 lg:pl-[55px]">
                   <div className="bg-img w-full overflow-hidden rounded-2xl">
-                    <img
+                    <Image
+                      width={4000} height={4000}
                       className="w-full h-full hover-scale block"
                       src="/images/component/assessment.png"
                       alt=""

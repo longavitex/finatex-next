@@ -9,6 +9,7 @@ import faqData from '@/data/faqs.json'
 import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image"
 
 export default function Faqs() {
     const [faq, setFaq] = useState<number | null>(1)
@@ -81,7 +82,7 @@ export default function Faqs() {
                             <div className="row flex items-center justify-center">
                                 <div className="w-full lg:w-2/3">
                                     <div className="content bg-gradient-blue rounded-xl flex flex-col items-center gap-4 py-8 px-7">
-                                        <div className="bg-img w-[120px]"><img className="w-full" src="/images/component/avatar-group.png" alt="" /></div>
+                                        <div className="bg-img w-[120px]"><Image width={4000} height={4000} className="w-full" src="/images/component/avatar-group.png" alt="" /></div>
                                         <div className="text text-center">
                                             <div className="heading6 text-white">Still have questions?</div>
                                             <div className="body3 text-white mt-2">Can’t find the answer you’re looking for? Please chat to our friendly team.</div>

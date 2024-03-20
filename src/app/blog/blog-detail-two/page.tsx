@@ -36,7 +36,7 @@ export default function CaseStudyDetail({ params: { slug } }: { params: { slug: 
                                 <div className="caption2 text-center py-2 px-4 bg-surface rounded-2xl inline-block">{foundPost?.tag || 'Design'}</div>
                                 <div className="heading4 text-center mt-4 text-white">{foundPost?.title || 'Earn good money and make you very successful creative Business'}</div>
                                 <div className="date flex items-center justify-center gap-4 mt-4">
-                                    <div className="author flex items-center gap-4"><img className="w-10 h-10 rounded-full" src={foundPost?.img || "/images/member/avatar4.png"} alt="" /><span className="text-button text-white">{foundPost?.author || 'Avitex'} </span></div>
+                                    <div className="author flex items-center gap-4"><Image width={4000} height={4000} className="w-10 h-10 rounded-full" src={foundPost?.img || "/images/member/avatar4.png"} alt="" /><span className="text-button text-white">{foundPost?.author || 'Avitex'} </span></div>
                                     <div className="space text-3xl font-normal text-white">-</div>
                                     <div className="item-date flex items-center">
                                         <Icon.CalendarBlank weight="bold" className="text-white" />

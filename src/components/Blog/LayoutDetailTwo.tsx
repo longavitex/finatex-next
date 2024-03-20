@@ -6,6 +6,7 @@ import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useRouter } from 'next/navigation';
 import { BlogType } from '@/type/BlogType';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
   data: BlogType | undefined
@@ -26,7 +27,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
           <div className="w-full lg:w-2/3">
             <div className="blog-paragraph">
               <div className="paragraph-heading">
-                <div className="bg-img"><img className="w-full rounded-2xl" src={data?.img || "/images/blog/item3.png"} alt="img" /></div>
+                <div className="bg-img"><Image width={4000} height={4000} className="w-full rounded-2xl" src={data?.img || "/images/blog/item3.png"} alt="img" /></div>
               </div>
               <div className="paragraph-content mt-8">
                 <div className="body2 text-secondary">{`Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.`}</div>
@@ -37,11 +38,11 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
               </div>
               <div className="grid sm:grid-cols-2 gap-7 mt-8">
                 {data?.listImg ? data?.listImg.map(item => (
-                  <div className="w-full" key={item}> <img className="w-full rounded-xl" src={item} alt="img" /></div>
+                  <div className="w-full" key={item}> <Image width={4000} height={4000} className="w-full rounded-xl" src={item} alt="img" /></div>
                 )) : (
                   <>
-                    <div className="w-full"> <img className="w-full rounded-xl" src="/images/blog/item13.png" alt="img" /></div>
-                    <div className="w-full"> <img className="w-full rounded-xl" src="/images/blog/item7.png" alt="img" /></div>
+                    <div className="w-full"> <Image width={4000} height={4000} className="w-full rounded-xl" src="/images/blog/item13.png" alt="img" /></div>
+                    <div className="w-full"> <Image width={4000} height={4000} className="w-full rounded-xl" src="/images/blog/item7.png" alt="img" /></div>
                   </>
                 )}
               </div>
