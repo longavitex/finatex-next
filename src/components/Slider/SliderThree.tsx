@@ -1,5 +1,6 @@
 import React from 'react'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from 'next/image';
 
 const SliderThree = () => {
     return (
@@ -27,7 +28,7 @@ const SliderThree = () => {
                                 </div>
                             </div>
                             <div className="slider-img w-11/12 max-md:hidden">
-                                <img className="w-100 animate__animated animate__fadeInUp animate__delay-1s" src="/images/slider/graphic-three.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full animate__animated animate__fadeInUp animate__delay-1s" src="/images/slider/graphic-three.png" alt="" />
                             </div>
                         </div>
                     </div>

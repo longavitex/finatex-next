@@ -19,7 +19,7 @@ const TestimonialItem: React.FC<Props> = ({ data, style }) => {
                         <div className="body3 text-secondary">{data.desc}</div>
                         <div className="infor mt-4 flex items-center gap-4">
                             <div className="avatar w-[60px] h-[60px] rounded-full overflow-hidden flex-shrink-0">
-                                <img className="w-full h-full" src={data.img} alt={data.author} />
+                                <Image width={5000} height={5000} className="w-full h-full" src={data.img} alt={data.author} />
                             </div>
                             <div className="desc">
                                 <div className="text-button">{data.author}</div>
@@ -37,7 +37,7 @@ const TestimonialItem: React.FC<Props> = ({ data, style }) => {
                         <div className="body3 mt-2">{data.desc}</div>
                         <div className="infor mt-4 flex items-center gap-4">
                             <div className="avatar w-[60px] h-[60px] rounded-full overflow-hidden flex-shrink-0">
-                                <img className="w-full h-full" src={data.img} alt={data.author} />
+                                <Image width={5000} height={5000} className="w-full h-full" src={data.img} alt={data.author} />
                             </div>
                             <div className="desc">
                                 <div className="text-button">{data.author}</div>

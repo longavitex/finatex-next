@@ -6,6 +6,7 @@ import serviceData from '@/data/service.json'
 import Partner from "@/components/Section/Partner/PartnerAbout"
 import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
+import Image from "next/image"
 
 export default function ServiceStyleOne() {
     return (
@@ -29,7 +30,7 @@ export default function ServiceStyleOne() {
                                 </div>
                                 <div className="w-full lg:w-1/2">
                                     <div className="bg-img w-full overflow-hidden rounded-xl">
-                                        <img className="w-full h-full block" src="/images/component/bottom-slider-three.png" alt="" />
+                                        <Image width={5000} height={5000} className="w-full h-full block" src="/images/component/bottom-slider-three.png" alt="" />
                                     </div>
                                 </div>
                             </div>

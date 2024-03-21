@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import faqData from '@/data/faqs.json'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from 'next/image';
 
 const FaqsOne = () => {
   const [faq, setFaq] = useState<number | null>(5)
@@ -16,7 +17,7 @@ const FaqsOne = () => {
       <div className="flex max-xl:flex-wrap main">
         <div className="w-full xl:w-1/2">
           <div className="bg-img w-full">
-            <img src="/images/component/item1.png" alt="img" className="w-full" />
+            <Image width={5000} height={5000} src="/images/component/item1.png" alt="img" className="w-full" />
           </div>
           <div className="desc bg-blue flex items-center justify-center">
             <div className="content flex gap-8">

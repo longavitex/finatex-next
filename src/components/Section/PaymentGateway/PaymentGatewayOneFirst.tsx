@@ -1,16 +1,29 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 const PaymentGatewayOneFirst = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <section className="payment-gateway-one style-first lg:mt-[100px] sm:mt-16 mt-10 bg-surface relative">
             <div className="bg-img lg:absolute top-0 left-0 lg:w-1/2 w-full h-full flex-shrink-0">
                 <Image className="w-full h-full object-cover" width={5000} height={5000} src="/images/component/gateway1.png" alt="" />
             </div>
             <div className="container w-full lg:py-[150px] pt-14 py-16">
-                <div className="w-full flex items-center lg:justify-end">
-                    <div className="payment-infor lg:w-1/2 xl:pl-20 lg:pl-10">
+                <div className="w-full flex items-center lg:justify-end" ref={ref}>
+                    <div className="payment-infor lg:w-1/2 xl:pl-20 lg:pl-10"
+                        style={{
+                            transform: isInView ? "none" : "translateX(60px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+                        }}
+                    >
                         <div className="heading flex items-center gap-4 max-lg:flex-wrap">
                             <div className="flex items-center">
                                 <div className="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-line p-0.5 z-[3]">

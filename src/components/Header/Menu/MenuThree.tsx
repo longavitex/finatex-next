@@ -39,12 +39,12 @@ const MenuThree = () => {
                 <div className="container flex items-center justify-between h-20">
                     <Link className="menu-left-block" href="/">
                         <Image
-                            src={'/images/LogoWhite.svg'}
-                            width={800}
-                            height={600}
+                            src={'/images/LogoWhite.png'}
+                            width={1800}
+                            height={1600}
                             alt="logo"
                             priority={true}
-                            className="w-auto max-sm:w-[132px]"
+                            className="w-[149px] max-sm:w-[132px]"
                         />
                     </Link>
                     <div className="menu-center-block h-full">

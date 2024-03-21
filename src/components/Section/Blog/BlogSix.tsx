@@ -3,6 +3,7 @@ import Link from "next/link"
 import BlogItem from "@/components/Blog/BlogItem"
 import { BlogType } from "@/type/BlogType"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 
 interface Props {
     data: Array<BlogType>
@@ -28,7 +29,7 @@ const BlogSix: React.FC<Props> = ({ data }) => {
                         >
                             <div className="w-full">
                                 <div className="bg-img w-full overflow-hidden rounded-xl">
-                                    <img className="w-full h-full block" src={item.img} alt={item.title} />
+                                    <Image width={5000} height={5000} className="w-full h-full block" src={item.img} alt={item.title} />
                                 </div>
                                 <div className="heading6 mt-4">{item.title}</div>
                                 <div className="date flex items-center gap-4 mt-3">

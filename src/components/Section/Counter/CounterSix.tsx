@@ -3,6 +3,7 @@
 import Link from "next/link"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useState } from "react";
+import Image from "next/image";
 
 const CounterSix = () => {
     const [openVideo, setOpenVideo] = useState(false)
@@ -13,7 +14,7 @@ const CounterSix = () => {
                 <div className="container">
                     <div className="video w-full sm:py-9 py-4 sm:px-10 px-5 rounded-3xl overflow-hidden relative max-sm:h-[300px]">
                         <div className="bg-img w-full h-full rounded-2xl overflow-hidden">
-                            <img className="w-full h-full object-cover" src="/images/component/thumbnail6.png" alt="" />
+                            <Image width={5000} height={5000} className="w-full h-full object-cover" src="/images/component/thumbnail6.png" alt="" />
                         </div>
                         <span
                             className="absolute sm:w-20 w-16 sm:h-20 h-16 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white"

@@ -44,7 +44,7 @@ const ProjectTwo = () => {
                     <SwiperSlide>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <img className="w-full h-full" src="/images/component/Project.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/Project.png" alt="" />
                             </div>
                             <Link className="text" href="/case-studies/case-studies-one">
                                 <div className="heading5 text-white">Financial assessment</div>
@@ -58,7 +58,7 @@ const ProjectTwo = () => {
                     <SwiperSlide>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <img className="w-full h-full" src="/images/component/Project-1.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/Project-1.png" alt="" />
                             </div>
                             <Link className="text" href="/case-studies/case-studies-one">
                                 <div className="heading5 text-white">Budget Planning</div>
@@ -72,7 +72,7 @@ const ProjectTwo = () => {
                     <SwiperSlide>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <img className="w-full h-full" src="/images/component/Project-2.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/Project-2.png" alt="" />
                             </div>
                             <Link className="text" href="/case-studies/case-studies-one">
                                 <div className="heading5 text-white">Insurance advice</div>
@@ -86,7 +86,7 @@ const ProjectTwo = () => {
                     <SwiperSlide>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <img className="w-full h-full" src="/images/component/Project-3.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/Project-3.png" alt="" />
                             </div>
                             <Link className="text" href="/case-studies/case-studies-one">
                                 <div className="heading5 text-white">Savings advice</div>
@@ -100,7 +100,7 @@ const ProjectTwo = () => {
                     <SwiperSlide>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <img className="w-full h-full" src="/images/component/Project-4.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/Project-4.png" alt="" />
                             </div>
                             <Link className="text" href="/case-studies/case-studies-one">
                                 <div className="heading5 text-white">Portfolio Management</div>

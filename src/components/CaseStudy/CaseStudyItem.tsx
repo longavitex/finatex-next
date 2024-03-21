@@ -2,6 +2,7 @@ import React from "react"
 import Link from "next/link"
 import { CaseStudyType } from "@/type/CaseStudyType"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 
 interface Props {
     data: CaseStudyType
@@ -19,7 +20,7 @@ const CaseStudyItem: React.FC<Props> = ({ data, style }) => {
                         as={"/case-studies/detail/" + data.title.toLowerCase().replace(/ /g, '-')}
                     >
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full rounded-xl block duration-700" src={data.img} alt="" />
+                            <Image width={5000} height={5000} className="w-full h-full rounded-xl block duration-700" src={data.img} alt="" />
                         </div>
                         <div className="infor px-10 text-center -mt-6 relative z-[1]">
                             <div className="main-infor bg-white rounded-lg px-6 py-4 box-shadow-sm">
@@ -34,7 +35,7 @@ const CaseStudyItem: React.FC<Props> = ({ data, style }) => {
                 <div className="case-study-item style-two item-filter">
                     <div className="item-main">
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full rounded-xl display-block" src={data.img} alt="" />
+                            <Image width={5000} height={5000} className="w-full h-full rounded-xl display-block" src={data.img} alt="" />
                             <Link
                                 className="flex flex-col items-center py-8 px-5 bg-white rounded-full text-center"
                                 href={"/case-studies/detail/[slug]"}
@@ -55,7 +56,7 @@ const CaseStudyItem: React.FC<Props> = ({ data, style }) => {
                 <div className="case-study-item style-two style-three item-filter">
                     <div className="item-main">
                         <div className="bg-img rounded-xl overflow-hidden">
-                            <img className="w-full h-full block" src={data.img} alt={data.title} />
+                            <Image width={5000} height={5000} className="w-full h-full block" src={data.img} alt={data.title} />
                             <Link
                                 className="flex flex-col items-center py-8 px-5 bg-white rounded-full text-center"
                                 href={"/case-studies/detail/[slug]"}

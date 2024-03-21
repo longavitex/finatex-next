@@ -1,5 +1,6 @@
 import React from 'react'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from 'next/image';
 
 const AboutFive = () => {
     return (
@@ -47,11 +48,11 @@ const AboutFive = () => {
                     </div>
                     <div className="w-full lg:w-5/12 sm:w-2/3">
                         <div className="bg-img w-full">
-                            <img className="w-full" src="/images/component/about-home5.png" alt="" />
+                            <Image width={5000} height={5000} className="w-full" src="/images/component/about-home5.png" alt="" />
                         </div>
                         <div className="sub-img">
-                            <img src="/images/component/sub-about5-left.png" alt="" />
-                            <img src="/images/component/sub-about5.png" alt="" />
+                            <Image width={5000} height={5000} src="/images/component/sub-about5-left.png" alt="" />
+                            <Image width={5000} height={5000} src="/images/component/sub-about5.png" alt="" />
                         </div>
                     </div>
                 </div>

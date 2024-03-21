@@ -41,12 +41,12 @@ const MenuSix = () => {
                         <div className="main flex items-center justify-between lg:h-20 h-16 py-4 px-7 rounded-full">
                             <Link className="menu-left-block" href="/">
                                 <Image
-                                    src={'/images/LogoWhite.svg'}
-                                    width={800}
-                                    height={600}
+                                    src={'/images/LogoWhite.png'}
+                                    width={1800}
+                                    height={1600}
                                     alt="logo"
                                     priority={true}
-                                    className="w-auto max-sm:w-[128px]"
+                                    className="w-[149px] max-sm:w-[128px]"
                                 />
                             </Link>
                             <div className="menu-center-block h-full">

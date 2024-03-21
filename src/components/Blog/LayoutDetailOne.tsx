@@ -6,6 +6,7 @@ import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useRouter } from 'next/navigation';
 import { BlogType } from '@/type/BlogType';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
   data: BlogType | undefined
@@ -59,7 +60,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
                     className="recent-post-item flex items-start gap-4 cursor-pointer"
                   >
                     <div className="item-img flex-shrink-0 w-20 h-20 rounded">
-                      <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
+                      <Image width={5000} height={5000} src={item.img} alt={item.title} className='w-full h-full object-cover' />
                     </div>
                     <div className="item-infor w-full">
                       <div className="item-date flex items-center">
@@ -98,7 +99,7 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
                     <span className="ml-1 caption2">{data?.date || '2 days ago'}</span>
                   </div>
                 </div>
-                <div className="bg-img mt-8"><img className="w-full rounded-2xl" src={data?.img || "/images/blog/item3.png"} alt="img" /></div>
+                <div className="bg-img mt-8"><Image width={5000} height={5000} className="w-full rounded-2xl" src={data?.img || "/images/blog/item3.png"} alt="img" /></div>
               </div>
               <div className="paragraph-content mt-8">
                 <div className="body2 text-secondary">{`Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.`}</div>
@@ -109,11 +110,11 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
               </div>
               <div className="grid sm:grid-cols-2 gap-7 mt-8">
                 {data?.listImg ? data?.listImg.map(item => (
-                  <div className="w-full" key={item}> <img className="w-full rounded-xl" src={item} alt="img" /></div>
+                  <div className="w-full" key={item}> <Image width={5000} height={5000} className="w-full rounded-xl" src={item} alt="img" /></div>
                 )) : (
                   <>
-                    <div className="w-full"> <img className="w-full rounded-xl" src="/images/blog/item13.png" alt="img" /></div>
-                    <div className="w-full"> <img className="w-full rounded-xl" src="/images/blog/item7.png" alt="img" /></div>
+                    <div className="w-full"> <Image width={5000} height={5000} className="w-full rounded-xl" src="/images/blog/item13.png" alt="img" /></div>
+                    <div className="w-full"> <Image width={5000} height={5000} className="w-full rounded-xl" src="/images/blog/item7.png" alt="img" /></div>
                   </>
                 )}
               </div>

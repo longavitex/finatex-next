@@ -18,7 +18,7 @@ const ServiceSix: React.FC<Props> = ({ data }) => {
                         <Link className="text-button duration-300 underline ml-2 text-white hover:text-orange" href="/service/service-one">View case</Link>
                     </div>
                     <div className="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20">
-                        {data.slice(0, 6).map((item, index) => (
+                        {data.filter(item => item.category === 'blockchain').slice(0, 6).map((item, index) => (
                             <ServiceItem data={item} style='style-six' number={index} key={index} />
                         ))}
                     </div>

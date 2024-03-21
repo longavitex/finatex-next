@@ -37,7 +37,7 @@ export default function HomeFour() {
                     <BlogFour data={blogData} />
                     <FormRequestFour />
                 </main>
-                <footer id="footer" className="style-three">
+                <footer id="footer" className="style-four">
                     <Footer />
                 </footer>
             </div>

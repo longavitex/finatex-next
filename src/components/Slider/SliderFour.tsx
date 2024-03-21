@@ -61,7 +61,7 @@ const SliderFour = () => {
                                         </div>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br className="max-md:hidden" />opportunities in the rapidly growing world of cryptocurrency.</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
-                                            <Link className="button-main bg-success text-white" href="/service/service-one">Discovery now</Link>
+                                            <Link className="button-main bg-success hover:bg-black text-white" href="/service/service-one">Discovery now</Link>
                                             <Link
                                                 className="button-main inline-flex bg-transparent text-button rounded-lg items-center gap-2"
                                                 href="#video">
@@ -106,7 +106,7 @@ const SliderFour = () => {
                                         <div className="body2 mt-3 text-secondary">Our tailored financial strategies are designed <br className="max-md:hidden" />to empower you on your journey
                                             to success</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
-                                            <Link className="button-main bg-success text-white" href="/service/service-one">Discovery now</Link>
+                                            <Link className="button-main bg-success hover:bg-black text-white" href="/service/service-one">Discovery now</Link>
                                             <Link
                                                 className="button-main inline-flex bg-transparent text-button rounded-lg items-center gap-2"
                                                 href="#video">
@@ -151,7 +151,7 @@ const SliderFour = () => {
                                         <div className="body2 mt-3 text-secondary">Experience the power of customized financial planning, <br className="max-md:hidden" />bringing you closer to
                                             achieving your goals</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
-                                            <Link className="button-main bg-success text-white" href="/service/service-one">Discovery now</Link>
+                                            <Link className="button-main bg-success hover:bg-black text-white" href="/service/service-one">Discovery now</Link>
                                             <Link
                                                 className="button-main inline-flex bg-transparent text-button rounded-lg items-center gap-2"
                                                 href="#video">

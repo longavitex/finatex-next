@@ -1,6 +1,7 @@
 import React from 'react'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ProjectFive = () => {
     return (
@@ -15,7 +16,7 @@ const ProjectFive = () => {
                         <div className="flex max-lg:flex-col items-center justify-between gap-y-8">
                             <div className="w-full lg:w-1/2 sm:w-2/3 lg:pr-20">
                                 <div className="bg-img w-full">
-                                    <img className="w-full" src="/images/banner/project-above-home5.png" alt="" />
+                                    <Image width={5000} height={5000} className="w-full" src="/images/banner/project-above-home5.png" alt="" />
                                 </div>
                             </div>
                             <div className="w-full lg:w-5/12">
@@ -60,7 +61,7 @@ const ProjectFive = () => {
                             </div>
                             <div className="w-full lg:w-5/12 sm:w-2/3">
                                 <div className="bg-img w-full">
-                                    <img className="w-full" src="/images/banner/project-below-home5.png" alt="" /></div>
+                                    <Image width={5000} height={5000} className="w-full" src="/images/banner/project-below-home5.png" alt="" /></div>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useState } from "react";
+import Image from "next/image";
 
 const AboutThree = () => {
     const [openVideo, setOpenVideo] = useState(false)
@@ -24,7 +25,7 @@ const AboutThree = () => {
                         </div>
                         <div className="w-full lg:w-1/2 lg:pl-[55px]">
                             <div className="bg-video w-full overflow-hidden rounded-2xl relative">
-                                <img className="w-full block" src="/images/blog/item2.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full block" src="/images/blog/item2.png" alt="" />
                                 <div
                                     className="absolute w-20 h-20 bg-white flex items-center justify-center rounded-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 duration-300 cursor-pointer text-gradient hover:bg-gradient hover:text-white"
                                     onClick={() => setOpenVideo(true)}

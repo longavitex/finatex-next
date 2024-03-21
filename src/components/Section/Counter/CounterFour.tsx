@@ -3,6 +3,7 @@
 import Link from "next/link"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useState } from "react";
+import Image from "next/image";
 
 const CounterFour = () => {
     const [openVideo, setOpenVideo] = useState(false)
@@ -13,7 +14,7 @@ const CounterFour = () => {
                 <div className="container -mb-[100px]">
                     <div className="video w-full rounded-3xl overflow-hidden relative">
                         <div className="bg-img lg:w-full w-auto display-block max-lg:h-[380px] max-sm:h-[320px]">
-                            <img className="w-full h-full object-cover" src="/images/component/thumbnail4.png" alt="" />
+                            <Image width={5000} height={5000} className="w-full h-full object-cover" src="/images/component/thumbnail4.png" alt="" />
                         </div>
                         <span
                             className="absolute w-20 h-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white"

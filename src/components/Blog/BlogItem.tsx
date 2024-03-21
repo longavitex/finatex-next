@@ -20,7 +20,7 @@ const BlogItem: React.FC<BlogProps> = ({ data, type }) => {
                     as={"/blog/blog-detail-one/" + data.title.toLowerCase().replace(/ /g, '-')}
                 >
                     <div className="w-full md:w-1/2">
-                        <div className="bg-img w-full overflow-hidden rounded-2xl"><img className="w-full h-full block" src={data.img} alt={data.title} /></div>
+                        <div className="bg-img w-full overflow-hidden rounded-2xl"><Image width={5000} height={5000} className="w-full h-full block" src={data.img} alt={data.title} /></div>
                     </div>
                     <div className="w-full md:w-1/2">
                         <div className="caption2 py-1 px-3 bg-surface rounded-full inline-block capitalize">{data.tag}</div>
@@ -45,7 +45,7 @@ const BlogItem: React.FC<BlogProps> = ({ data, type }) => {
                 >
                     <div className="w-full">
                         <div className="bg-img w-full overflow-hidden rounded-2xl">
-                            <img className="w-full h-full block" src={data.img} alt={data.title} />
+                            <Image width={5000} height={5000} className="w-full h-full block" src={data.img} alt={data.title} />
                         </div>
                         <div className="date flex items-center gap-4 mt-5">
                             <div className="author caption2 text-secondary">by <span className="text-on-surface">{data.author} </span></div>
@@ -76,7 +76,7 @@ const BlogItem: React.FC<BlogProps> = ({ data, type }) => {
                         as={"/blog/blog-detail-one/" + data.title.toLowerCase().replace(/ /g, '-')}
                     >
                         <div className="bg-img w-full overflow-hidden">
-                            <img className="w-full h-full block" src={data.img} alt={data.title} />
+                            <Image width={5000} height={5000} className="w-full h-full block" src={data.img} alt={data.title} />
                         </div>
                         <div className="infor sm:p-6 p-4">
                             <div className="caption2 py-1 px-3 bg-surface rounded-full inline-block capitalize">{data.tag}</div>

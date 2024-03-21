@@ -66,7 +66,7 @@ const CaseStudyThree: React.FC<Props> = ({ data }) => {
                                 }
                             }}
                         >
-                            {data.slice(0, 4).filter(item => item.category === activeTab).map((item, index) => (
+                            {data.filter(item => item.category === activeTab).slice(0, 4).map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <CaseStudyItem data={item} style='style-three' />
                                 </SwiperSlide>

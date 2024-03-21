@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "category": "fintech",        
+        "category": "investing",        
         "subTitle": "retirement planning",
         "title": "Consulting Firms Online",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "category": "fintech",        
+        "category": "investing",        
         "subTitle": "account management tools",
         "title": "Web-Based Investments",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
@@ -66,34 +66,61 @@
         "id": 8,
         "category": "crypto",        
         "subTitle": "made financial planning",
-        "title": "Investment Advice",
+        "title": "Crypto Implementation Case",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
         "shortDesc": "",        
         "img": "/images/blog/item6.png"
     },
     {
+        "id": 81,
+        "category": "crypto",        
+        "subTitle": "retirement planning",
+        "title": "Cryptocurrency Trading Finance",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "",        
+        "img": "/images/blog/item2.png"
+    },
+    {
+        "id": 82,
+        "category": "crypto",        
+        "subTitle": "Budget Planning",
+        "title": "Digital Currency Stories",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "",        
+        "img": "/images/blog/item9.png"
+    },
+    {
         "id": 9,
         "category": "blockchain",        
-        "subTitle": "retirement planning",
-        "title": "Risk Management",
+        "subTitle": "made financial planning",
+        "title": "Blockchain Adoption Success",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
         "shortDesc": "",        
         "img": "/images/blog/item5.png"
     },
     {
-        "id": 10,
-        "category": "planning",        
-        "subTitle": "account management tools",
-        "title": "Cryptocurrency Trading",
+        "id": 91,
+        "category": "blockchain",        
+        "subTitle": "Budget Planning",
+        "title": "Innovative Blockchain Solutions",
         "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
         "shortDesc": "",        
-        "img": "/images/blog/item4.png"
+        "img": "/images/blog/item1.png"
+    },
+    {
+        "id": 92,
+        "category": "blockchain",        
+        "subTitle": "retirement planning",
+        "title": "Blockchain Industry Impact",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "",        
+        "img": "/images/blog/item7.png"
     },
     {
         "id": 11,
         "category": "planning",        
-        "subTitle": "Budget Planning",
-        "title": "Financial assessment",
+        "subTitle": "made financial planning",
+        "title": "Effective Planning Wins",
         "desc": "Get personalized financial advice to help reach your financial goals.",
         "shortDesc": "",        
         "img": "/images/blog/item3.png"
@@ -102,7 +129,7 @@
         "id": 12,
         "category": "planning",        
         "subTitle": "Budget Planning",
-        "title": "Financial assessment",
+        "title": "Strategic Planning Case",
         "desc": "Get personalized financial advice to help reach your financial goals.",
         "shortDesc": "",        
         "img": "/images/blog/item2.png"
@@ -110,8 +137,8 @@
     {
         "id": 13,
         "category": "planning",        
-        "subTitle": "Budget Planning",
-        "title": "Financial assessment",
+        "subTitle": "retirement planning",
+        "title": "Innovative Planning Solutions",
         "desc": "Get personalized financial advice to help reach your financial goals.",
         "shortDesc": "",        
         "img": "/images/blog/item1.png"
@@ -120,7 +147,7 @@
         "id": 14,
         "category": "planning",        
         "subTitle": "Budget Planning",
-        "title": "Financial assessment",
+        "title": "Strategic Execution Wins",
         "desc": "Get personalized financial advice to help reach your financial goals.",
         "shortDesc": "",        
         "img": "/images/blog/item5.png"

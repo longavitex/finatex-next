@@ -10,6 +10,7 @@ import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import faqData from '@/data/faqs.json'
+import Image from "next/image"
 
 export default function ServiceStyleOne({ params: { slug } }: { params: { slug: string } }) {
     const foundPost = serviceData.find(item => {
@@ -38,7 +39,7 @@ export default function ServiceStyleOne({ params: { slug } }: { params: { slug: 
                                     <div className="content-para xl:pr-[80px]">
                                         <div className="heading3">Portfolio Management for Financial Growth</div>
                                         <div className="body2 text-secondary mt-4">Our objective for this project was to develop a comprehensive financial management platform that provided users with a centralized dashboard for managing their finances. We wanted to create a platform that was user-friendly, easy to navigate, and offered a range of features to help users track their spending, monitor their investments, and plan for their financial future. Our goal was to provide users with the tools and resources they need to make informed financial decisions and achieve their financial goals.</div>
-                                        <div className="bg-img mt-8 mb-8"><img className="w-full h-full rounded-xl" src="/images/component/gateway1.png" alt="" /></div>
+                                        <div className="bg-img mt-8 mb-8"><Image width={5000} height={5000} className="w-full h-full rounded-xl" src="/images/component/gateway1.png" alt="" /></div>
                                         <div className="heading6">We offer diverse business solutions.</div>
                                         <div className="body2 text-secondary mt-4">{`At our company, we offer a comprehensive suite of business services tailored to meet our clients unique needs and goals. Our services range from financial planning and accounting to marketing and brand management, delivered with exceptional value and expertise across various industries and business types. Our customized approach ensures that our solutions fit your specific objectives, whether you're a small startup or a large multinational corporation.`}</div>
                                         <div className="list-feature mt-8">
@@ -133,7 +134,7 @@ export default function ServiceStyleOne({ params: { slug } }: { params: { slug: 
                                                     Personal Financial</div><i className="ph-bold ph-caret-right hidden"></i></a></div>
                                     </div>
                                     <div className="ads-block rounded-lg md:mt-10 mt-6 relative">
-                                        <div className="bg-img"> <img src="/images/component/ads.png" alt="" /></div>
+                                        <div className="bg-img"> <Image width={5000} height={5000} src="/images/component/ads.png" alt="" /></div>
                                         <div className="text flex flex-col justify-between absolute left-0 top-0 w-full h-full p-8">
                                             <div className="title">
                                                 <div className="heading5 text-white">Let’s talk</div>

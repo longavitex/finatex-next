@@ -21,7 +21,7 @@ const ServiceFilter: React.FC<Props> = ({ data }) => {
             <div className="service-block lg:py-[100px] sm:py-16 py-10">
                 <div className="container flex flex-col items-center">
                     <div className="menu-tab flex items-center gap-2 p-1 bg-surface rounded-2xl">
-                        {['cryptocurrency financial', 'payment solution', 'financial planning', 'blockchain', 'online banking', 'personal financial'].map((item, index) => (
+                        {['cryptocurrency financial', 'payment solution', 'financial planning', 'blockchain', 'online banking', 'personal finance'].map((item, index) => (
                             <div
                                 key={index}
                                 className={`tab-item relative text-secondary text-button-sm py-2 px-5 cursor-pointer duration-500 hover:text-black ${activeTab === item ? 'active' : ''}`}

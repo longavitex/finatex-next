@@ -11,24 +11,24 @@ const Footer = () => {
                     <div className="flex max-lg:flex-col max-lg:items-start gap-y-10 pb-10">
                         <div className="lg:w-1/4">
                             <div className="footer-company-infor flex flex-col justify-between gap-5">
-                                <Image width={4000} height={3000} className="footer-logo w-[145px]" src="/images/Logo-footer.svg" alt="Logo" />
+                                <Image width={4000} height={3000} className="footer-logo w-[145px]" src="/images/LogoWhite.png" alt="Logo" />
                                 <div className="text caption1 text-white">We are a diversified company specialized in providing comprehensive financial solutions for individuals and businesses.</div>
                                 <div className="list-social flex items-center gap-2.5 style-one">
-                                    <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.facebook.com/" target="_blank">
+                                    <Link className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.facebook.com/" target="_blank">
                                         <i className="icon-facebook text-sm"></i>
-                                    </a>
-                                    <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.linkedin.com/" target="_blank">
+                                    </Link>
+                                    <Link className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.linkedin.com/" target="_blank">
                                         <i className="icon-in text-sm"></i>
-                                    </a>
-                                    <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.twitter.com/" target="_blank">
+                                    </Link>
+                                    <Link className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.twitter.com/" target="_blank">
                                         <i className="icon-twitter text-xs"></i>
-                                    </a>
-                                    <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.instagram.com/" target="_blank">
+                                    </Link>
+                                    <Link className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.instagram.com/" target="_blank">
                                         <i className="icon-insta text-xs"></i>
-                                    </a>
-                                    <a className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.youtube.com/" target="_blank">
+                                    </Link>
+                                    <Link className="item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center" href="https://www.youtube.com/" target="_blank">
                                         <i className="icon-youtube text-xs"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -37,28 +37,28 @@ const Footer = () => {
                                 <div className="footer-nav-item">
                                     <div className="item-heading text-button-sm text-white">Quick Links</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/about/about-one">About us</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/service/service-one">Services</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/case-studies/case-studies-one">Case Studies</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/contact/contact-two">Contact</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/about/about-one">About us</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/service/service-one">Services</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/case-studies/case-studies-one">Case Studies</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/contact/contact-two">Contact</Link></li>
                                     </ul>
                                 </div>
                                 <div className="footer-nav-item max-sm:hidden">
                                     <div className="item-heading text-button-sm text-white">Pages</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/faqs">FAQs</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/pricing">Pricing</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/pages/partners">Partners</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="/contact/contact-two">Support Center</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/pages/faqs">FAQs</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/pages/pricing">Pricing</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/pages/partners">Partners</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="/contact/contact-two">Support Center</Link></li>
                                     </ul>
                                 </div>
                                 <div className="footer-nav-item">
                                     <div className="item-heading text-button-sm text-white">Blog</div>
                                     <ul className="list-nav mt-1">
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-list-one">Blog List</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-grid">Blog Grid</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-masonry">Masonry</Link></li>
-                                        <li className="mt-3"><Link className="caption1 text-surface hover-underline" href="blog-detail-one">Blog Detail</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="blog-list-one">Blog List</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="blog-grid">Blog Grid</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="blog-masonry">Masonry</Link></li>
+                                        <li className="mt-3"><Link className="caption1 has-line-before line-white text-surface hover-underline" href="blog-detail-one">Blog Detail</Link></li>
                                     </ul>
                                 </div>
                             </div>

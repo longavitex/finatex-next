@@ -3,6 +3,7 @@ import Link from "next/link"
 import BlogItem from "@/components/Blog/BlogItem"
 import { BlogType } from "@/type/BlogType"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 
 interface Props {
     data: Array<BlogType>
@@ -29,7 +30,7 @@ const BlogFour: React.FC<Props> = ({ data }) => {
                             >
                                 <div className="w-full">
                                     <div className="bg-img w-full overflow-hidden rounded-xl">
-                                        <img className="w-full h-full block" src={item.img} alt={item.title} />
+                                        <Image width={5000} height={5000} className="w-full h-full block" src={item.img} alt={item.title} />
                                     </div>
                                     <div className="heading4 mt-4">{item.title}</div>
                                     <div className="body3 text-secondary mt-3">{item.desc}</div>
@@ -53,7 +54,7 @@ const BlogFour: React.FC<Props> = ({ data }) => {
                                 as={"/blog/blog-detail-one/" + item.title.toLowerCase().replace(/ /g, '-')}
                             >
                                 <div className="bg-img sm:w-[197px] flex-shrink-0 overflow-hidden rounded-lg">
-                                    <img className="w-full h-full object-cover block" src={item.img} alt={item.title} />
+                                    <Image width={5000} height={5000} className="w-full h-full object-cover block" src={item.img} alt={item.title} />
                                 </div>
                                 <div className="infor">
                                     <div className="heading6">{item.title}</div>

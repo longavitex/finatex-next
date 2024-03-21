@@ -7,6 +7,7 @@ import BlogItem from '@/components/Blog/BlogItem';
 import HandlePagination from '@/components/Other/HandlePagination'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LayoutListTwo = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -122,7 +123,7 @@ const LayoutListTwo = () => {
                     className="recent-post-item flex items-start gap-4 cursor-pointer"
                   >
                     <div className="item-img flex-shrink-0 w-20 h-20 rounded">
-                      <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
+                      <Image width={5000} height={5000} src={item.img} alt={item.title} className='w-full h-full object-cover' />
                     </div>
                     <div className="item-infor w-full">
                       <div className="item-date flex items-center">

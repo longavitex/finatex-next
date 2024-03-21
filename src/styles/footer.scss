@@ -131,6 +131,32 @@
     }
 }
 
+.style-four {
+    .footer-block {
+        .company-contact {
+            svg {
+                path {
+                    &:nth-child(4) {
+                        fill: var(--success);
+                    }
+                }
+            }
+
+            .send-block {
+                button {
+                    background-color: var(--success);
+                }
+
+                input {
+                    &:focus {
+                        border-color: var(--success);
+                    }
+                }
+            }
+        }
+    }
+}
+
 .style-five {
     .footer-block {
         background-color: var(--black);

@@ -1,8 +1,4 @@
-'use client'
-
 import React from 'react'
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 import Link from "next/link"
 import { ServiceType } from "@/type/ServiceType"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
@@ -14,8 +10,6 @@ interface Props {
 }
 
 const ServiceItem: React.FC<Props> = ({ data, style, number }) => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
 
     return (
         <>
