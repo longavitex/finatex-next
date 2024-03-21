@@ -72,89 +72,87 @@ const LayoutListTwo = () => {
   };
 
   return (
-    <Suspense>
-      <div className='list-blog lg:py-[100px] sm:py-16 py-10'>
-        <div className="container">
-          <div className="flex max-lg:flex-col gap-y-10">
-            <div className="w-full lg:w-2/3">
-              <div className="list flex flex-col gap-y-10">
-                {currentBlogs.map(item => (
-                  item.id === -1 ? (
-                    <div key={item.id} className="no-data-blog">No blogs match the selected criteria.</div>
-                  ) : (
-                    <BlogItem key={item.id} data={item} type='list-two' />
-                  )
+    <div className='list-blog lg:py-[100px] sm:py-16 py-10'>
+      <div className="container">
+        <div className="flex max-lg:flex-col gap-y-10">
+          <div className="w-full lg:w-2/3">
+            <div className="list flex flex-col gap-y-10">
+              {currentBlogs.map(item => (
+                item.id === -1 ? (
+                  <div key={item.id} className="no-data-blog">No blogs match the selected criteria.</div>
+                ) : (
+                  <BlogItem key={item.id} data={item} type='list-two' />
+                )
+              ))}
+            </div>
+            {pageCount > 1 && (
+              <div className="list-pagination w-full flex items-center md:mt-10 mt-6">
+                <HandlePagination pageCount={pageCount} onPageChange={handlePageChange} />
+              </div>
+            )}
+          </div>
+          <div className="w-full lg:w-1/3 lg:pl-[55px]">
+            <div className="search-block rounded-lg bg-surface h-[50px] relative">
+              <input className="rounded-lg bg-surface w-full h-full pl-4 pr-12" type="text" placeholder="Search" />
+              <Icon.MagnifyingGlass className='absolute top-1/2 -translate-y-1/2 right-4 text-xl cursor-pointer' />
+            </div>
+            <div className="cate-block md:mt-10 mt-6">
+              <div className="heading7">Categories</div>
+              <div className="list-nav mt-4">
+                {['financial planning', 'payment solution', 'cryptocurrency financial', 'blockchain', 'online banking', 'personal financial'].map(item => (
+                  <div
+                    key={item}
+                    className={`nav-item rounded-lg flex items-center justify-between p-3 cursor-pointer text-button text-secondary capitalize ${item === category ? 'active' : ''}`}
+                    onClick={() => handleCategory(item)}
+                  >
+                    {item}
+                    <Icon.CaretRight weight="bold" />
+                  </div>
                 ))}
               </div>
-              {pageCount > 1 && (
-                <div className="list-pagination w-full flex items-center md:mt-10 mt-6">
-                  <HandlePagination pageCount={pageCount} onPageChange={handlePageChange} />
-                </div>
-              )}
             </div>
-            <div className="w-full lg:w-1/3 lg:pl-[55px]">
-              <div className="search-block rounded-lg bg-surface h-[50px] relative">
-                <input className="rounded-lg bg-surface w-full h-full pl-4 pr-12" type="text" placeholder="Search" />
-                <Icon.MagnifyingGlass className='absolute top-1/2 -translate-y-1/2 right-4 text-xl cursor-pointer' />
-              </div>
-              <div className="cate-block md:mt-10 mt-6">
-                <div className="heading7">Categories</div>
-                <div className="list-nav mt-4">
-                  {['financial planning', 'payment solution', 'cryptocurrency financial', 'blockchain', 'online banking', 'personal financial'].map(item => (
-                    <div
-                      key={item}
-                      className={`nav-item rounded-lg flex items-center justify-between p-3 cursor-pointer text-button text-secondary capitalize ${item === category ? 'active' : ''}`}
-                      onClick={() => handleCategory(item)}
-                    >
-                      {item}
-                      <Icon.CaretRight weight="bold" />
+            <div className="recent-post-block md:mt-10 mt-6">
+              <div className="recent-post-heading heading7">Recent Posts</div>
+              <div className="list-recent-post flex flex-col gap-6 mt-4">
+                {blogData.slice(4, 7).map(item => (
+                  <Link
+                    key={item.id}
+                    href={"/blog/blog-detail-one/[slug]"}
+                    as={"/blog/blog-detail-one/" + item.title.toLowerCase().replace(/ /g, '-')}
+                    className="recent-post-item flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="item-img flex-shrink-0 w-20 h-20 rounded">
+                      <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="recent-post-block md:mt-10 mt-6">
-                <div className="recent-post-heading heading7">Recent Posts</div>
-                <div className="list-recent-post flex flex-col gap-6 mt-4">
-                  {blogData.slice(4, 7).map(item => (
-                    <Link
-                      key={item.id}
-                      href={"/blog/blog-detail-one/[slug]"}
-                      as={"/blog/blog-detail-one/" + item.title.toLowerCase().replace(/ /g, '-')}
-                      className="recent-post-item flex items-start gap-4 cursor-pointer"
-                    >
-                      <div className="item-img flex-shrink-0 w-20 h-20 rounded">
-                        <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
+                    <div className="item-infor w-full">
+                      <div className="item-date flex items-center">
+                        <Icon.CalendarBlank weight='bold' />
+                        <span className="ml-1 caption2">{item.date}</span>
                       </div>
-                      <div className="item-infor w-full">
-                        <div className="item-date flex items-center">
-                          <Icon.CalendarBlank weight='bold' />
-                          <span className="ml-1 caption2">{item.date}</span>
-                        </div>
-                        <div className="item-title mt-1">{item.title}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-              <div className="tags-popular-block md:mt-10 mt-6">
-                <div className="tag-heading heading7">Popular Tags</div>
-                <div className="list-tag mt-4 flex flex-wrap gap-3">
-                  {['featured', 'experience', 'interview', 'skill', 'business', 'design'].map(item => (
-                    <div
-                      key={item}
-                      className={`caption2 py-2 px-4 rounded-2xl hover:bg-black hover:text-white duration-300 cursor-pointer ${item === tag ? 'bg-black text-white' : 'bg-surface'}`}
-                      onClick={() => handleTag(item)}
-                    >
-                      {item}
+                      <div className="item-title mt-1">{item.title}</div>
                     </div>
-                  ))}
-                </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="tags-popular-block md:mt-10 mt-6">
+              <div className="tag-heading heading7">Popular Tags</div>
+              <div className="list-tag mt-4 flex flex-wrap gap-3">
+                {['featured', 'experience', 'interview', 'skill', 'business', 'design'].map(item => (
+                  <div
+                    key={item}
+                    className={`caption2 py-2 px-4 rounded-2xl hover:bg-black hover:text-white duration-300 cursor-pointer ${item === tag ? 'bg-black text-white' : 'bg-surface'}`}
+                    onClick={() => handleTag(item)}
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Suspense>
+    </div>
   )
 }
 

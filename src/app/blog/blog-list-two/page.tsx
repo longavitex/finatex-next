@@ -5,6 +5,7 @@ import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem"
 import LayoutListTwo from "@/components/Blog/LayoutListTwo"
 import CtaOne from "@/components/Section/CTA/CtaOne"
 import Footer from "@/components/Footer/Footer"
+import { Suspense } from "react"
 
 export default function BlogListStyleTwo() {
     return (
@@ -16,7 +17,9 @@ export default function BlogListStyleTwo() {
                 </header>
                 <main className="content">
                     <BreadcrumbItem link="Blog" img="/images/banner/blog.png" title="Blog" desc="Discover valuable insights and expert advice on budgeting, investing, and retirement planning in our Financial Blogs section." />
-                    <LayoutListTwo />
+                    <Suspense>
+                        <LayoutListTwo />
+                    </Suspense>
                     <CtaOne />
                 </main>
                 <footer id="footer">
