@@ -154,12 +154,12 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
                   </div>
                 </div>
                 <div className="mt-5 border border-line"></div>
-                <div className="list-li mt-5 px-3">
+                <ul className="list-li mt-5 px-3">
                   <li className="body3 text-secondary">15+ years of industry experience designing, building, and supporting large-scale distributed systems in production, with recent experience in building large scale cloud services.</li>
                   <li className="body3 text-secondary mt-2">Deep knowledge and experience with different security areas like identity and access management, cryptography, network security, etc.</li>
                   <li className="body3 text-secondary mt-2">Experience with database systems and database internals, such as query engines and optimizers are a big plus. </li>
                   <li className="body3 text-secondary mt-2">Strong fundamentals in computer science skills.</li>
-                </div>
+                </ul>
                 <div className="end mt-5 body2 text-secondary">{`Saving money is an essential skill for financial stability and long-term success. We understand the importance of efficient resource management, and we're here to guide you through proven strategies to optimize your financial savings. Our experts will provide you with practical tips and insights, such as budgeting techniques, expense tracking, smart investment options, and ways to reduce unnecessary expenses.`}</div>
               </div>
             </div>
