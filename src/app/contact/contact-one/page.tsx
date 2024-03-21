@@ -128,7 +128,7 @@ export default function ContactStyleOne() {
                         everyday
                       </div>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-5 md:mt-10 mt-5">
+                    <div className="grid sm:grid-cols-2 gap-5">
                       <div className="w-full">
                         <input
                           className="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
