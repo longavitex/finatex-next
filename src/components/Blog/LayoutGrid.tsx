@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation';
 import blogData from '@/data/blog.json'
 import BlogItem from '@/components/Blog/BlogItem';
@@ -72,24 +72,26 @@ const LayoutGrid = () => {
   };
 
   return (
-    <div className='list-blog lg:py-[100px] sm:py-16 py-10'>
-      <div className="container">
-        <div className="list grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
-          {currentBlogs.map(item => (
-            item.id === -1 ? (
-              <div key={item.id} className="no-data-blog">No blogs match the selected criteria.</div>
-            ) : (
-              <BlogItem key={item.id} data={item} type='grid' />
-            )
-          ))}
-        </div>
-        {pageCount > 1 && (
-          <div className="list-pagination w-full flex items-center justify-center md:mt-10 mt-6">
-            <HandlePagination pageCount={pageCount} onPageChange={handlePageChange} />
+    <Suspense>
+      <div className='list-blog lg:py-[100px] sm:py-16 py-10'>
+        <div className="container">
+          <div className="list grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
+            {currentBlogs.map(item => (
+              item.id === -1 ? (
+                <div key={item.id} className="no-data-blog">No blogs match the selected criteria.</div>
+              ) : (
+                <BlogItem key={item.id} data={item} type='grid' />
+              )
+            ))}
           </div>
-        )}
+          {pageCount > 1 && (
+            <div className="list-pagination w-full flex items-center justify-center md:mt-10 mt-6">
+              <HandlePagination pageCount={pageCount} onPageChange={handlePageChange} />
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </Suspense>
   )
 }
 
