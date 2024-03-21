@@ -36,6 +36,24 @@
         "img": "/images/blog/item10.png"
     },
     {
+        "id": 41,
+        "category": "fintech",        
+        "subTitle": "account management tools",
+        "title": "Fintech Growth Case",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "",        
+        "img": "/images/blog/item5.png"
+    },
+    {
+        "id": 42,
+        "category": "fintech",        
+        "subTitle": "made financial planning",
+        "title": "Innovative Fintech Stories",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "",        
+        "img": "/images/blog/item2.png"
+    },
+    {
         "id": 5,
         "category": "investing",        
         "subTitle": "retirement planning",
