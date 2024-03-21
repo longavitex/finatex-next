@@ -14,7 +14,7 @@ const BlogFour: React.FC<Props> = ({ data }) => {
         <section className="list-blog three-col lg:py-[100px] sm:py-16 py-10">
             <div className="container">
                 <div className="heading flex items-center justify-between">
-                    <div className="heading3">Latest News</div>
+                    <h3 className="heading3">Latest News</h3>
                     <Link className="text-button underline hover:text-success duration-300" href="/blog/blog-list-one">
                         View All
                     </Link>

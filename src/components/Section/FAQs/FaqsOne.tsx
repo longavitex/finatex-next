@@ -22,7 +22,7 @@ const FaqsOne = () => {
           <div className="desc bg-blue flex items-center justify-center">
             <div className="content flex gap-8">
               <i className="icon-hand-team text-white flex-shrink-0"></i>
-              <div className="heading4 text-white">We aim for a world of convenience and value for many customers</div>
+              <h4 className="heading4 text-white">We aim for a world of convenience and value for many customers</h4>
             </div>
           </div>
         </div>

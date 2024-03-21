@@ -8,7 +8,7 @@ const CaseStudyOne = () => {
             <section className="case-study-block style-one lg:pt-[100px] sm:pt-16 pt-10">
                 <div className="container">
                     <div className="heading text-center">
-                        <div className="heading3">Case Studies</div>
+                        <h3 className="heading3">Case Studies</h3>
                         <div className="right flex flex-col items-center gap-2 mt-3">
                             <div className="body3">Exploring In-Depth and Inspiring Case Studies of Success Stories</div>
                             <Link className="flex items-center gap-2 hover:text-blue duration-300" href="/case-studies/case-studies-one">

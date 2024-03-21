@@ -45,7 +45,7 @@ const SliderFive = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Invest the Future of</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Invest the Future of</span>
@@ -58,7 +58,7 @@ const SliderFive = () => {
                                                 <span className=" text-blue block relative overflow-hidden">Confidence</span>
                                                 <span className=" text-blue block absolute top-0 left-0 w-full h-full">Confidence</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br />opportunities in the rapidly growing world of cryptocurrency.</div>
                                         <div className="button-block md:mt-10 mt-6"><Link className="button-main bg-blue text-white" href="/service/service-one">Discovery now</Link>
                                         </div>
@@ -80,7 +80,7 @@ const SliderFive = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Empower Your</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Empower Your</span>
@@ -89,7 +89,7 @@ const SliderFive = () => {
                                                 <span className=" text-blue block relative overflow-hidden">Financial Future</span>
                                                 <span className=" text-blue block absolute top-0 left-0 w-full h-full">Financial Future</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br />opportunities in the rapidly growing world of cryptocurrency.</div>
                                         <div className="button-block md:mt-10 mt-6"><Link className="button-main bg-blue text-white" href="/service/service-one">Discovery now</Link>
                                         </div>
@@ -111,7 +111,7 @@ const SliderFive = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Powerful Payment</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Powerful Payment</span>
@@ -124,7 +124,7 @@ const SliderFive = () => {
                                                 <span className=" text-blue block relative overflow-hidden">Seamless Transactions</span>
                                                 <span className=" text-blue block absolute top-0 left-0 w-full h-full">Seamless Transactions</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Trust us to help you navigate the complex landscape and <br />achieve your financial goals with peace of mind.</div>
                                         <div className="button-block md:mt-10 mt-6"><Link className="button-main bg-blue text-white" href="/service/service-one">Discovery now</Link>
                                         </div>

@@ -42,7 +42,7 @@ const PaymentGatewayOneFirst = () => {
                             <div className="text-button text-secondary">Trusted by 50M+ People <br />around the globe</div>
                         </div>
                         <div className="text lg:mt-14 mt-5">
-                            <div className="heading3">Payment Gateway Services</div>
+                            <h3 className="heading3">Payment Gateway Services</h3>
                             <div className="body3 text-secondary lg:mt-6 mt-4">We provide reliable and secure payment gateway services for businesses of all sizes. With our cutting-edge technology and 24/7 customer support, you can easily accept payments from customers all over the world.</div>
                         </div>
                         <div className="button-block flex items-center max-sm:flex-wrap sm:gap-6 gap-3 lg:mt-12 mt-8 w-fit">

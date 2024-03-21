@@ -15,7 +15,7 @@ const CaseStudyFour = ({ data }: Props) => {
             <section className="case-study-block style-four lg:py-[100px] sm:py-16 py-10">
                 <div className="container">
                     <div className="heading flex items-center justify-between gap-5 flex-wrap">
-                        <div className="heading3">Case Studies</div>
+                        <h3 className="heading3">Case Studies</h3>
                         <Link className="text-button underline hover:text-success duration-300" href="/case-studies/case-studies-one">
                             View All
                         </Link>

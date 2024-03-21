@@ -15,7 +15,7 @@ const PaymentGatewayOneSecond = () => {
             <div className="container">
                 <div className="content flex items-center gap-8">
                     <div className="w-full xl:w-5/12 flex flex-col gap-y-6">
-                        <div className="heading3">Payment Gateway Services</div>
+                        <h3 className="heading3">Payment Gateway Services</h3>
                         <div className="body2 text-secondary">We provide reliable and secure payment gateway services for businesses of all sizes. With our cutting-edge technology and 24/7 customer support, you can easily accept payments from customers all over the world.</div>
                         <div className="list-service">
                             <div className="service-item flex items-center">

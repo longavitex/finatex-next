@@ -45,7 +45,7 @@ const SliderFour = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Empower Your Finances</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Empower Your Finances</span>
@@ -58,7 +58,7 @@ const SliderFour = () => {
                                                 <span className=" block relative overflow-hidden">Solution</span>
                                                 <span className=" block absolute top-0 left-0 w-full h-full">Solution</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Our platform offers secure and reliable investment <br className="max-md:hidden" />opportunities in the rapidly growing world of cryptocurrency.</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
                                             <Link className="button-main bg-success hover:bg-black text-white" href="/service/service-one">Discovery now</Link>
@@ -89,7 +89,7 @@ const SliderFour = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Tailored Financial</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Tailored Financial</span>
@@ -102,7 +102,7 @@ const SliderFour = () => {
                                                 <span className=" block relative overflow-hidden">Success</span>
                                                 <span className=" block absolute top-0 left-0 w-full h-full">Success</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Our tailored financial strategies are designed <br className="max-md:hidden" />to empower you on your journey
                                             to success</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
@@ -134,7 +134,7 @@ const SliderFour = () => {
                                 </div>
                                 <div className="container">
                                     <div className="text-content flex flex-col justify-between">
-                                        <div className="heading2">
+                                        <h2 className="heading2">
                                             <div className="relative overflow-hidden">
                                                 <span className="block relative overflow-hidden">Customized Financial</span>
                                                 <span className="block absolute top-0 left-0 w-full h-full">Customized Financial</span>
@@ -147,7 +147,7 @@ const SliderFour = () => {
                                                 <span className=" block relative overflow-hidden">Your Goals</span>
                                                 <span className=" block absolute top-0 left-0 w-full h-full">Your Goals</span>
                                             </div>
-                                        </div>
+                                        </h2>
                                         <div className="body2 mt-3 text-secondary">Experience the power of customized financial planning, <br className="max-md:hidden" />bringing you closer to
                                             achieving your goals</div>
                                         <div className="button-block flex items-center gap-4 md:mt-10 mt-6">
