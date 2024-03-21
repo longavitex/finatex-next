@@ -19,7 +19,7 @@ const FormRequestFour = () => {
                             <input className="body3 md:py-[14px] py-3 px-5 bg-surface rounded-lg w-full" type="email" placeholder="Email" required />
                         </div>
                         <div className="w-full select-arrow-none relative">
-                            <select className="body3 md:py-[14px] py-3 px-5 bg-surface rounded-lg w-full" name="" required>
+                            <select className="body3 md:py-[14px] py-3 px-5 bg-surface rounded-lg w-full" name="category">
                                 <option value="Financial Planning">Financial Planning</option>
                                 <option value="Business Planning">Business Planning</option>
                                 <option value="Development Planning">Development Planning</option>
