@@ -12,7 +12,7 @@ interface Props {
   data: BlogType | undefined
 }
 
-const LayoutDetailOne: React.FC<Props> = ({ data }) => {
+const LayoutDetailTwo: React.FC<Props> = ({ data }) => {
   const router = useRouter()
 
   const handleTag = (tag: string) => {
@@ -155,4 +155,4 @@ const LayoutDetailOne: React.FC<Props> = ({ data }) => {
   )
 }
 
-export default LayoutDetailOne
+export default LayoutDetailTwo
