@@ -173,7 +173,7 @@ export default function ContactStyleOne() {
                       <div className="col-span-2 w-full">
                         <textarea
                           className="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
-                          name=""
+                          name="message"
                           rows={4}
                           placeholder="Your Message"
                           required

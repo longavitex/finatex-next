@@ -38,7 +38,7 @@ const FormRequestTwo: React.FC<Props> = ({ bgImg, classname }) => {
                                     <Icon.CaretDown className="absolute top-1/2 -translate-y-1/2 right-4" />
                                 </div>
                                 <div className="col-span-2">
-                                    <textarea className="w-full bg-surface caption1 px-4 py-3 rounded-lg" name="" rows={3} placeholder="Your Message" required></textarea>
+                                    <textarea className="w-full bg-surface caption1 px-4 py-3 rounded-lg" name="message" rows={3} placeholder="Your Message" required></textarea>
                                 </div>
                             </div>
                             <div className="button-block">
